@@ -27,7 +27,6 @@ namespace POS_App {
             this.comboTo = new System.Windows.Forms.ComboBox();
             this.comboFrom = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textPersonNum = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -46,11 +45,11 @@ namespace POS_App {
             this.label6 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.row1 = new System.Windows.Forms.Panel();
+            this.row2 = new System.Windows.Forms.Panel();
+            this.row3 = new System.Windows.Forms.Panel();
+            this.row4 = new System.Windows.Forms.Panel();
+            this.row5 = new System.Windows.Forms.Panel();
             this.Departure1 = new System.Windows.Forms.Label();
             this.labelArrival1 = new System.Windows.Forms.Label();
             this.Departure3 = new System.Windows.Forms.Label();
@@ -77,34 +76,33 @@ namespace POS_App {
             this.btnSelect4 = new System.Windows.Forms.Label();
             this.btnSelect5 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.row6 = new System.Windows.Forms.Panel();
             this.btnSelect6 = new System.Windows.Forms.Label();
             this.labelAirLine6 = new System.Windows.Forms.Label();
             this.labelFlightInfo6 = new System.Windows.Forms.Label();
             this.labelArrival6 = new System.Windows.Forms.Label();
             this.Departure6 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
+            this.row7 = new System.Windows.Forms.Panel();
             this.btnSelect7 = new System.Windows.Forms.Label();
             this.labelAirLine7 = new System.Windows.Forms.Label();
             this.labelFlightInfo7 = new System.Windows.Forms.Label();
             this.labelArrival7 = new System.Windows.Forms.Label();
             this.Departure7 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
+            this.row8 = new System.Windows.Forms.Panel();
             this.btnSelect8 = new System.Windows.Forms.Label();
             this.labelAirLine8 = new System.Windows.Forms.Label();
             this.labelFlightInfo8 = new System.Windows.Forms.Label();
             this.labelArrival8 = new System.Windows.Forms.Label();
             this.Departure8 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
+            this.row9 = new System.Windows.Forms.Panel();
             this.btnSelect9 = new System.Windows.Forms.Label();
             this.labelAirLine9 = new System.Windows.Forms.Label();
             this.labelFlightInfo9 = new System.Windows.Forms.Label();
             this.labelArrival9 = new System.Windows.Forms.Label();
             this.Departure9 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
+            this.row10 = new System.Windows.Forms.Panel();
             this.btnSelect10 = new System.Windows.Forms.Label();
             this.labelAirLine10 = new System.Windows.Forms.Label();
             this.labelFlightInfo10 = new System.Windows.Forms.Label();
@@ -132,44 +130,92 @@ namespace POS_App {
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
+            this.pictureBox28 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox27 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.numericPerson = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             this.panelFlight1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
+            this.row1.SuspendLayout();
+            this.row2.SuspendLayout();
+            this.row3.SuspendLayout();
+            this.row4.SuspendLayout();
+            this.row5.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.row6.SuspendLayout();
+            this.row7.SuspendLayout();
+            this.row8.SuspendLayout();
+            this.row9.SuspendLayout();
+            this.row10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericPerson)).BeginInit();
             this.SuspendLayout();
             // 
             // comboTo
             // 
+            this.comboTo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboTo.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboTo.FormattingEnabled = true;
             this.comboTo.Items.AddRange(new object[] {
@@ -187,6 +233,7 @@ namespace POS_App {
             // 
             // comboFrom
             // 
+            this.comboFrom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboFrom.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboFrom.FormattingEnabled = true;
             this.comboFrom.Items.AddRange(new object[] {
@@ -201,12 +248,13 @@ namespace POS_App {
             this.comboFrom.Name = "comboFrom";
             this.comboFrom.Size = new System.Drawing.Size(309, 36);
             this.comboFrom.TabIndex = 0;
+            this.comboFrom.SelectedIndexChanged += new System.EventHandler(this.comboFrom_SelectedIndexChanged);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.numericPerson);
             this.panel1.Controls.Add(this.btnSearch);
-            this.panel1.Controls.Add(this.textPersonNum);
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
@@ -227,15 +275,6 @@ namespace POS_App {
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(394, 670);
             this.panel1.TabIndex = 1;
-            // 
-            // textPersonNum
-            // 
-            this.textPersonNum.BackColor = System.Drawing.Color.White;
-            this.textPersonNum.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textPersonNum.Location = new System.Drawing.Point(40, 339);
-            this.textPersonNum.Name = "textPersonNum";
-            this.textPersonNum.Size = new System.Drawing.Size(310, 31);
-            this.textPersonNum.TabIndex = 3;
             // 
             // dateTimePicker1
             // 
@@ -325,7 +364,7 @@ namespace POS_App {
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(36, 313);
+            this.label5.Location = new System.Drawing.Point(36, 310);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(95, 28);
             this.label5.TabIndex = 2;
@@ -335,7 +374,7 @@ namespace POS_App {
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(37, 236);
+            this.label4.Location = new System.Drawing.Point(37, 235);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 28);
             this.label4.TabIndex = 2;
@@ -345,7 +384,7 @@ namespace POS_App {
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(36, 156);
+            this.label2.Location = new System.Drawing.Point(36, 155);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 28);
             this.label2.TabIndex = 2;
@@ -364,16 +403,16 @@ namespace POS_App {
             // 
             this.panelFlight1.AutoScroll = true;
             this.panelFlight1.BackColor = System.Drawing.Color.White;
-            this.panelFlight1.Controls.Add(this.panel13);
-            this.panelFlight1.Controls.Add(this.panel11);
-            this.panelFlight1.Controls.Add(this.panel12);
-            this.panelFlight1.Controls.Add(this.panel10);
-            this.panelFlight1.Controls.Add(this.panel9);
-            this.panelFlight1.Controls.Add(this.panel6);
-            this.panelFlight1.Controls.Add(this.panel5);
-            this.panelFlight1.Controls.Add(this.panel4);
-            this.panelFlight1.Controls.Add(this.panel2);
-            this.panelFlight1.Controls.Add(this.panel7);
+            this.panelFlight1.Controls.Add(this.row10);
+            this.panelFlight1.Controls.Add(this.row8);
+            this.panelFlight1.Controls.Add(this.row9);
+            this.panelFlight1.Controls.Add(this.row7);
+            this.panelFlight1.Controls.Add(this.row6);
+            this.panelFlight1.Controls.Add(this.row4);
+            this.panelFlight1.Controls.Add(this.row3);
+            this.panelFlight1.Controls.Add(this.row2);
+            this.panelFlight1.Controls.Add(this.row1);
+            this.panelFlight1.Controls.Add(this.row5);
             this.panelFlight1.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelFlight1.Location = new System.Drawing.Point(-1, 120);
             this.panelFlight1.Name = "panelFlight1";
@@ -384,6 +423,7 @@ namespace POS_App {
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.panel3.Controls.Add(this.label11);
+            this.panel3.Controls.Add(this.label1);
             this.panel3.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.ForeColor = System.Drawing.Color.Black;
             this.panel3.Location = new System.Drawing.Point(-1, -1);
@@ -435,85 +475,96 @@ namespace POS_App {
             this.label14.TabIndex = 2;
             this.label14.Text = "Airline";
             // 
-            // panel2
+            // row1
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.btnSelect1);
-            this.panel2.Controls.Add(this.labelPrice1);
-            this.panel2.Controls.Add(this.labelAirLine1);
-            this.panel2.Controls.Add(this.labelFlightInfo1);
-            this.panel2.Controls.Add(this.labelArrival1);
-            this.panel2.Controls.Add(this.label51);
-            this.panel2.Controls.Add(this.Departure1);
-            this.panel2.Location = new System.Drawing.Point(16, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1009, 100);
-            this.panel2.TabIndex = 3;
+            this.row1.BackColor = System.Drawing.Color.White;
+            this.row1.Controls.Add(this.pictureBox21);
+            this.row1.Controls.Add(this.pictureBox11);
+            this.row1.Controls.Add(this.pictureBox3);
+            this.row1.Controls.Add(this.pictureBox1);
+            this.row1.Controls.Add(this.btnSelect1);
+            this.row1.Controls.Add(this.labelPrice1);
+            this.row1.Controls.Add(this.labelAirLine1);
+            this.row1.Controls.Add(this.labelFlightInfo1);
+            this.row1.Controls.Add(this.labelArrival1);
+            this.row1.Controls.Add(this.label51);
+            this.row1.Controls.Add(this.Departure1);
+            this.row1.Location = new System.Drawing.Point(16, 4);
+            this.row1.Name = "row1";
+            this.row1.Size = new System.Drawing.Size(1009, 100);
+            this.row1.TabIndex = 3;
             // 
-            // panel4
+            // row2
             // 
-            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Controls.Add(this.btnSelect2);
-            this.panel4.Controls.Add(this.labelPrice2);
-            this.panel4.Controls.Add(this.labelAirLine2);
-            this.panel4.Controls.Add(this.labelFlightInfo2);
-            this.panel4.Controls.Add(this.labelArrival2);
-            this.panel4.Controls.Add(this.label52);
-            this.panel4.Controls.Add(this.Departure2);
-            this.panel4.Location = new System.Drawing.Point(16, 104);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1009, 100);
-            this.panel4.TabIndex = 3;
+            this.row2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.row2.Controls.Add(this.pictureBox22);
+            this.row2.Controls.Add(this.pictureBox12);
+            this.row2.Controls.Add(this.pictureBox2);
+            this.row2.Controls.Add(this.btnSelect2);
+            this.row2.Controls.Add(this.labelPrice2);
+            this.row2.Controls.Add(this.labelAirLine2);
+            this.row2.Controls.Add(this.labelFlightInfo2);
+            this.row2.Controls.Add(this.labelArrival2);
+            this.row2.Controls.Add(this.label52);
+            this.row2.Controls.Add(this.Departure2);
+            this.row2.Location = new System.Drawing.Point(16, 104);
+            this.row2.Name = "row2";
+            this.row2.Size = new System.Drawing.Size(1009, 100);
+            this.row2.TabIndex = 3;
             // 
-            // panel5
+            // row3
             // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.pictureBox3);
-            this.panel5.Controls.Add(this.btnSelect3);
-            this.panel5.Controls.Add(this.labelPrice3);
-            this.panel5.Controls.Add(this.labelAirLine3);
-            this.panel5.Controls.Add(this.labelFlightInfo3);
-            this.panel5.Controls.Add(this.labelArrival3);
-            this.panel5.Controls.Add(this.label53);
-            this.panel5.Controls.Add(this.Departure3);
-            this.panel5.Location = new System.Drawing.Point(16, 204);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1009, 100);
-            this.panel5.TabIndex = 3;
+            this.row3.BackColor = System.Drawing.Color.White;
+            this.row3.Controls.Add(this.pictureBox23);
+            this.row3.Controls.Add(this.pictureBox13);
+            this.row3.Controls.Add(this.pictureBox4);
+            this.row3.Controls.Add(this.btnSelect3);
+            this.row3.Controls.Add(this.labelPrice3);
+            this.row3.Controls.Add(this.labelAirLine3);
+            this.row3.Controls.Add(this.labelFlightInfo3);
+            this.row3.Controls.Add(this.labelArrival3);
+            this.row3.Controls.Add(this.label53);
+            this.row3.Controls.Add(this.Departure3);
+            this.row3.Location = new System.Drawing.Point(16, 204);
+            this.row3.Name = "row3";
+            this.row3.Size = new System.Drawing.Size(1009, 100);
+            this.row3.TabIndex = 3;
             // 
-            // panel6
+            // row4
             // 
-            this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel6.Controls.Add(this.pictureBox4);
-            this.panel6.Controls.Add(this.btnSelect4);
-            this.panel6.Controls.Add(this.labelPrice4);
-            this.panel6.Controls.Add(this.labelAirLine4);
-            this.panel6.Controls.Add(this.labelFlightInfo4);
-            this.panel6.Controls.Add(this.labelArrival4);
-            this.panel6.Controls.Add(this.label54);
-            this.panel6.Controls.Add(this.Departure4);
-            this.panel6.Location = new System.Drawing.Point(16, 304);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1009, 100);
-            this.panel6.TabIndex = 3;
+            this.row4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.row4.Controls.Add(this.pictureBox24);
+            this.row4.Controls.Add(this.pictureBox14);
+            this.row4.Controls.Add(this.pictureBox5);
+            this.row4.Controls.Add(this.btnSelect4);
+            this.row4.Controls.Add(this.labelPrice4);
+            this.row4.Controls.Add(this.labelAirLine4);
+            this.row4.Controls.Add(this.labelFlightInfo4);
+            this.row4.Controls.Add(this.labelArrival4);
+            this.row4.Controls.Add(this.label54);
+            this.row4.Controls.Add(this.Departure4);
+            this.row4.Location = new System.Drawing.Point(16, 304);
+            this.row4.Name = "row4";
+            this.row4.Size = new System.Drawing.Size(1009, 100);
+            this.row4.TabIndex = 3;
             // 
-            // panel7
+            // row5
             // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.pictureBox5);
-            this.panel7.Controls.Add(this.btnSelect5);
-            this.panel7.Controls.Add(this.labelPrice5);
-            this.panel7.Controls.Add(this.labelAirLine5);
-            this.panel7.Controls.Add(this.labelFlightInfo5);
-            this.panel7.Controls.Add(this.labelArrival5);
-            this.panel7.Controls.Add(this.label55);
-            this.panel7.Controls.Add(this.Departure5);
-            this.panel7.Location = new System.Drawing.Point(16, 404);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1009, 100);
-            this.panel7.TabIndex = 3;
+            this.row5.BackColor = System.Drawing.Color.White;
+            this.row5.Controls.Add(this.pictureBox25);
+            this.row5.Controls.Add(this.pictureBox15);
+            this.row5.Controls.Add(this.pictureBox6);
+            this.row5.Controls.Add(this.btnSelect5);
+            this.row5.Controls.Add(this.labelPrice5);
+            this.row5.Controls.Add(this.labelAirLine5);
+            this.row5.Controls.Add(this.labelFlightInfo5);
+            this.row5.Controls.Add(this.labelArrival5);
+            this.row5.Controls.Add(this.label55);
+            this.row5.Controls.Add(this.Departure5);
+            this.row5.Location = new System.Drawing.Point(16, 404);
+            this.row5.Name = "row5";
+            this.row5.Size = new System.Drawing.Size(1009, 100);
+            this.row5.TabIndex = 3;
             // 
             // Departure1
             // 
@@ -618,9 +669,9 @@ namespace POS_App {
             // 
             this.labelFlightInfo1.BackColor = System.Drawing.Color.White;
             this.labelFlightInfo1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFlightInfo1.Location = new System.Drawing.Point(356, 0);
+            this.labelFlightInfo1.Location = new System.Drawing.Point(358, 0);
             this.labelFlightInfo1.Name = "labelFlightInfo1";
-            this.labelFlightInfo1.Size = new System.Drawing.Size(170, 100);
+            this.labelFlightInfo1.Size = new System.Drawing.Size(149, 100);
             this.labelFlightInfo1.TabIndex = 2;
             this.labelFlightInfo1.Text = "1h 20m";
             this.labelFlightInfo1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -629,9 +680,9 @@ namespace POS_App {
             // 
             this.labelFlightInfo2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.labelFlightInfo2.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFlightInfo2.Location = new System.Drawing.Point(356, 0);
+            this.labelFlightInfo2.Location = new System.Drawing.Point(358, 0);
             this.labelFlightInfo2.Name = "labelFlightInfo2";
-            this.labelFlightInfo2.Size = new System.Drawing.Size(170, 100);
+            this.labelFlightInfo2.Size = new System.Drawing.Size(149, 100);
             this.labelFlightInfo2.TabIndex = 2;
             this.labelFlightInfo2.Text = "1h 20m";
             this.labelFlightInfo2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -651,9 +702,9 @@ namespace POS_App {
             // 
             this.labelFlightInfo3.BackColor = System.Drawing.Color.White;
             this.labelFlightInfo3.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFlightInfo3.Location = new System.Drawing.Point(356, 0);
+            this.labelFlightInfo3.Location = new System.Drawing.Point(358, 0);
             this.labelFlightInfo3.Name = "labelFlightInfo3";
-            this.labelFlightInfo3.Size = new System.Drawing.Size(170, 100);
+            this.labelFlightInfo3.Size = new System.Drawing.Size(149, 100);
             this.labelFlightInfo3.TabIndex = 2;
             this.labelFlightInfo3.Text = "1h 20m";
             this.labelFlightInfo3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -662,9 +713,9 @@ namespace POS_App {
             // 
             this.labelFlightInfo4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.labelFlightInfo4.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFlightInfo4.Location = new System.Drawing.Point(356, 0);
+            this.labelFlightInfo4.Location = new System.Drawing.Point(358, 0);
             this.labelFlightInfo4.Name = "labelFlightInfo4";
-            this.labelFlightInfo4.Size = new System.Drawing.Size(170, 100);
+            this.labelFlightInfo4.Size = new System.Drawing.Size(149, 100);
             this.labelFlightInfo4.TabIndex = 2;
             this.labelFlightInfo4.Text = "1h 20m";
             this.labelFlightInfo4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -673,9 +724,9 @@ namespace POS_App {
             // 
             this.labelFlightInfo5.BackColor = System.Drawing.Color.White;
             this.labelFlightInfo5.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFlightInfo5.Location = new System.Drawing.Point(356, -1);
+            this.labelFlightInfo5.Location = new System.Drawing.Point(358, -1);
             this.labelFlightInfo5.Name = "labelFlightInfo5";
-            this.labelFlightInfo5.Size = new System.Drawing.Size(170, 100);
+            this.labelFlightInfo5.Size = new System.Drawing.Size(149, 100);
             this.labelFlightInfo5.TabIndex = 2;
             this.labelFlightInfo5.Text = "1h 20m";
             this.labelFlightInfo5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -800,23 +851,13 @@ namespace POS_App {
             this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(37, 409);
+            this.btnSearch.Location = new System.Drawing.Point(37, 416);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(313, 45);
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "search";
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.label11.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(13, 10);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(79, 36);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Flights";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // panel8
             // 
@@ -826,6 +867,7 @@ namespace POS_App {
             this.panel8.Controls.Add(this.label6);
             this.panel8.Controls.Add(this.label12);
             this.panel8.Controls.Add(this.label39);
+            this.panel8.Controls.Add(this.label15);
             this.panel8.Controls.Add(this.label14);
             this.panel8.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel8.ForeColor = System.Drawing.Color.Black;
@@ -834,21 +876,23 @@ namespace POS_App {
             this.panel8.Size = new System.Drawing.Size(1058, 57);
             this.panel8.TabIndex = 1;
             // 
-            // panel9
+            // row6
             // 
-            this.panel9.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel9.Controls.Add(this.pictureBox6);
-            this.panel9.Controls.Add(this.btnSelect6);
-            this.panel9.Controls.Add(this.labelPrice6);
-            this.panel9.Controls.Add(this.labelAirLine6);
-            this.panel9.Controls.Add(this.labelFlightInfo6);
-            this.panel9.Controls.Add(this.labelArrival6);
-            this.panel9.Controls.Add(this.label56);
-            this.panel9.Controls.Add(this.Departure6);
-            this.panel9.Location = new System.Drawing.Point(16, 503);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1009, 100);
-            this.panel9.TabIndex = 3;
+            this.row6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.row6.Controls.Add(this.pictureBox26);
+            this.row6.Controls.Add(this.pictureBox16);
+            this.row6.Controls.Add(this.pictureBox7);
+            this.row6.Controls.Add(this.btnSelect6);
+            this.row6.Controls.Add(this.labelPrice6);
+            this.row6.Controls.Add(this.labelAirLine6);
+            this.row6.Controls.Add(this.labelFlightInfo6);
+            this.row6.Controls.Add(this.labelArrival6);
+            this.row6.Controls.Add(this.label56);
+            this.row6.Controls.Add(this.Departure6);
+            this.row6.Location = new System.Drawing.Point(16, 503);
+            this.row6.Name = "row6";
+            this.row6.Size = new System.Drawing.Size(1009, 100);
+            this.row6.TabIndex = 3;
             // 
             // btnSelect6
             // 
@@ -877,9 +921,9 @@ namespace POS_App {
             // 
             this.labelFlightInfo6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.labelFlightInfo6.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFlightInfo6.Location = new System.Drawing.Point(356, 0);
+            this.labelFlightInfo6.Location = new System.Drawing.Point(358, 0);
             this.labelFlightInfo6.Name = "labelFlightInfo6";
-            this.labelFlightInfo6.Size = new System.Drawing.Size(170, 100);
+            this.labelFlightInfo6.Size = new System.Drawing.Size(149, 100);
             this.labelFlightInfo6.TabIndex = 2;
             this.labelFlightInfo6.Text = "1h 20m";
             this.labelFlightInfo6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -906,21 +950,23 @@ namespace POS_App {
             this.Departure6.Text = "9:00";
             this.Departure6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel10
+            // row7
             // 
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Controls.Add(this.pictureBox7);
-            this.panel10.Controls.Add(this.btnSelect7);
-            this.panel10.Controls.Add(this.labelPrice7);
-            this.panel10.Controls.Add(this.labelAirLine7);
-            this.panel10.Controls.Add(this.labelFlightInfo7);
-            this.panel10.Controls.Add(this.labelArrival7);
-            this.panel10.Controls.Add(this.label57);
-            this.panel10.Controls.Add(this.Departure7);
-            this.panel10.Location = new System.Drawing.Point(16, 600);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1009, 100);
-            this.panel10.TabIndex = 3;
+            this.row7.BackColor = System.Drawing.Color.White;
+            this.row7.Controls.Add(this.pictureBox27);
+            this.row7.Controls.Add(this.pictureBox17);
+            this.row7.Controls.Add(this.pictureBox8);
+            this.row7.Controls.Add(this.btnSelect7);
+            this.row7.Controls.Add(this.labelPrice7);
+            this.row7.Controls.Add(this.labelAirLine7);
+            this.row7.Controls.Add(this.labelFlightInfo7);
+            this.row7.Controls.Add(this.labelArrival7);
+            this.row7.Controls.Add(this.label57);
+            this.row7.Controls.Add(this.Departure7);
+            this.row7.Location = new System.Drawing.Point(16, 600);
+            this.row7.Name = "row7";
+            this.row7.Size = new System.Drawing.Size(1009, 100);
+            this.row7.TabIndex = 3;
             // 
             // btnSelect7
             // 
@@ -949,9 +995,9 @@ namespace POS_App {
             // 
             this.labelFlightInfo7.BackColor = System.Drawing.Color.White;
             this.labelFlightInfo7.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFlightInfo7.Location = new System.Drawing.Point(356, -1);
+            this.labelFlightInfo7.Location = new System.Drawing.Point(358, -1);
             this.labelFlightInfo7.Name = "labelFlightInfo7";
-            this.labelFlightInfo7.Size = new System.Drawing.Size(170, 100);
+            this.labelFlightInfo7.Size = new System.Drawing.Size(149, 100);
             this.labelFlightInfo7.TabIndex = 2;
             this.labelFlightInfo7.Text = "1h 20m";
             this.labelFlightInfo7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -978,21 +1024,23 @@ namespace POS_App {
             this.Departure7.Text = "9:00";
             this.Departure7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel11
+            // row8
             // 
-            this.panel11.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel11.Controls.Add(this.pictureBox8);
-            this.panel11.Controls.Add(this.btnSelect8);
-            this.panel11.Controls.Add(this.labelPrice8);
-            this.panel11.Controls.Add(this.labelAirLine8);
-            this.panel11.Controls.Add(this.labelFlightInfo8);
-            this.panel11.Controls.Add(this.labelArrival8);
-            this.panel11.Controls.Add(this.label58);
-            this.panel11.Controls.Add(this.Departure8);
-            this.panel11.Location = new System.Drawing.Point(16, 699);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1009, 100);
-            this.panel11.TabIndex = 3;
+            this.row8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.row8.Controls.Add(this.pictureBox28);
+            this.row8.Controls.Add(this.pictureBox18);
+            this.row8.Controls.Add(this.pictureBox9);
+            this.row8.Controls.Add(this.btnSelect8);
+            this.row8.Controls.Add(this.labelPrice8);
+            this.row8.Controls.Add(this.labelAirLine8);
+            this.row8.Controls.Add(this.labelFlightInfo8);
+            this.row8.Controls.Add(this.labelArrival8);
+            this.row8.Controls.Add(this.label58);
+            this.row8.Controls.Add(this.Departure8);
+            this.row8.Location = new System.Drawing.Point(16, 699);
+            this.row8.Name = "row8";
+            this.row8.Size = new System.Drawing.Size(1009, 100);
+            this.row8.TabIndex = 3;
             // 
             // btnSelect8
             // 
@@ -1021,9 +1069,9 @@ namespace POS_App {
             // 
             this.labelFlightInfo8.BackColor = System.Drawing.Color.WhiteSmoke;
             this.labelFlightInfo8.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFlightInfo8.Location = new System.Drawing.Point(356, 0);
+            this.labelFlightInfo8.Location = new System.Drawing.Point(358, 0);
             this.labelFlightInfo8.Name = "labelFlightInfo8";
-            this.labelFlightInfo8.Size = new System.Drawing.Size(170, 100);
+            this.labelFlightInfo8.Size = new System.Drawing.Size(149, 100);
             this.labelFlightInfo8.TabIndex = 2;
             this.labelFlightInfo8.Text = "1h 20m";
             this.labelFlightInfo8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1050,21 +1098,23 @@ namespace POS_App {
             this.Departure8.Text = "9:00";
             this.Departure8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel12
+            // row9
             // 
-            this.panel12.BackColor = System.Drawing.Color.White;
-            this.panel12.Controls.Add(this.pictureBox9);
-            this.panel12.Controls.Add(this.btnSelect9);
-            this.panel12.Controls.Add(this.labelPrice9);
-            this.panel12.Controls.Add(this.labelAirLine9);
-            this.panel12.Controls.Add(this.labelFlightInfo9);
-            this.panel12.Controls.Add(this.labelArrival9);
-            this.panel12.Controls.Add(this.label59);
-            this.panel12.Controls.Add(this.Departure9);
-            this.panel12.Location = new System.Drawing.Point(16, 798);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(1009, 100);
-            this.panel12.TabIndex = 3;
+            this.row9.BackColor = System.Drawing.Color.White;
+            this.row9.Controls.Add(this.pictureBox29);
+            this.row9.Controls.Add(this.pictureBox19);
+            this.row9.Controls.Add(this.pictureBox10);
+            this.row9.Controls.Add(this.btnSelect9);
+            this.row9.Controls.Add(this.labelPrice9);
+            this.row9.Controls.Add(this.labelAirLine9);
+            this.row9.Controls.Add(this.labelFlightInfo9);
+            this.row9.Controls.Add(this.labelArrival9);
+            this.row9.Controls.Add(this.label59);
+            this.row9.Controls.Add(this.Departure9);
+            this.row9.Location = new System.Drawing.Point(16, 798);
+            this.row9.Name = "row9";
+            this.row9.Size = new System.Drawing.Size(1009, 100);
+            this.row9.TabIndex = 3;
             // 
             // btnSelect9
             // 
@@ -1093,9 +1143,9 @@ namespace POS_App {
             // 
             this.labelFlightInfo9.BackColor = System.Drawing.Color.White;
             this.labelFlightInfo9.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFlightInfo9.Location = new System.Drawing.Point(356, -1);
+            this.labelFlightInfo9.Location = new System.Drawing.Point(358, -1);
             this.labelFlightInfo9.Name = "labelFlightInfo9";
-            this.labelFlightInfo9.Size = new System.Drawing.Size(170, 100);
+            this.labelFlightInfo9.Size = new System.Drawing.Size(149, 100);
             this.labelFlightInfo9.TabIndex = 2;
             this.labelFlightInfo9.Text = "1h 20m";
             this.labelFlightInfo9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1133,21 +1183,23 @@ namespace POS_App {
             this.label39.TabIndex = 2;
             this.label39.Text = "Action";
             // 
-            // panel13
+            // row10
             // 
-            this.panel13.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel13.Controls.Add(this.pictureBox10);
-            this.panel13.Controls.Add(this.btnSelect10);
-            this.panel13.Controls.Add(this.labelPrice10);
-            this.panel13.Controls.Add(this.labelAirLine10);
-            this.panel13.Controls.Add(this.labelFlightInfo10);
-            this.panel13.Controls.Add(this.labelArrival10);
-            this.panel13.Controls.Add(this.label60);
-            this.panel13.Controls.Add(this.Departure10);
-            this.panel13.Location = new System.Drawing.Point(16, 897);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(1009, 100);
-            this.panel13.TabIndex = 3;
+            this.row10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.row10.Controls.Add(this.pictureBox30);
+            this.row10.Controls.Add(this.pictureBox20);
+            this.row10.Controls.Add(this.pictureBox31);
+            this.row10.Controls.Add(this.btnSelect10);
+            this.row10.Controls.Add(this.labelPrice10);
+            this.row10.Controls.Add(this.labelAirLine10);
+            this.row10.Controls.Add(this.labelFlightInfo10);
+            this.row10.Controls.Add(this.labelArrival10);
+            this.row10.Controls.Add(this.label60);
+            this.row10.Controls.Add(this.Departure10);
+            this.row10.Location = new System.Drawing.Point(16, 897);
+            this.row10.Name = "row10";
+            this.row10.Size = new System.Drawing.Size(1009, 100);
+            this.row10.TabIndex = 3;
             // 
             // btnSelect10
             // 
@@ -1176,9 +1228,9 @@ namespace POS_App {
             // 
             this.labelFlightInfo10.BackColor = System.Drawing.Color.WhiteSmoke;
             this.labelFlightInfo10.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFlightInfo10.Location = new System.Drawing.Point(356, 0);
+            this.labelFlightInfo10.Location = new System.Drawing.Point(358, 0);
             this.labelFlightInfo10.Name = "labelFlightInfo10";
-            this.labelFlightInfo10.Size = new System.Drawing.Size(170, 100);
+            this.labelFlightInfo10.Size = new System.Drawing.Size(149, 100);
             this.labelFlightInfo10.TabIndex = 2;
             this.labelFlightInfo10.Text = "1h 20m";
             this.labelFlightInfo10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1446,85 +1498,356 @@ namespace POS_App {
             this.label3.TabIndex = 2;
             this.label3.Text = "From";
             // 
-            // pictureBox1
+            // label1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(532, 23);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(67, 50);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(889, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(136, 28);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "timer";
             // 
-            // pictureBox2
+            // label11
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(532, 25);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(67, 50);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label11.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(35, 17);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(79, 36);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "Flights";
             // 
-            // pictureBox3
+            // label15
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(532, 28);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(67, 50);
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label15.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(752, 22);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(51, 28);
+            this.label15.TabIndex = 2;
+            this.label15.Text = "Price";
             // 
-            // pictureBox4
+            // pictureBox30
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(532, 26);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(67, 50);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
+            this.pictureBox30.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
+            this.pictureBox30.Location = new System.Drawing.Point(173, 24);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox30.TabIndex = 3;
+            this.pictureBox30.TabStop = false;
             // 
-            // pictureBox5
+            // pictureBox31
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(532, 25);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(67, 50);
-            this.pictureBox5.TabIndex = 3;
-            this.pictureBox5.TabStop = false;
+            this.pictureBox31.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox31.Location = new System.Drawing.Point(575, 37);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox31.TabIndex = 3;
+            this.pictureBox31.TabStop = false;
             // 
-            // pictureBox6
+            // pictureBox28
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(532, 27);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(67, 50);
-            this.pictureBox6.TabIndex = 3;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Location = new System.Drawing.Point(532, 23);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(67, 50);
-            this.pictureBox7.TabIndex = 3;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Location = new System.Drawing.Point(532, 24);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(67, 50);
-            this.pictureBox8.TabIndex = 3;
-            this.pictureBox8.TabStop = false;
+            this.pictureBox28.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
+            this.pictureBox28.Location = new System.Drawing.Point(173, 24);
+            this.pictureBox28.Name = "pictureBox28";
+            this.pictureBox28.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox28.TabIndex = 3;
+            this.pictureBox28.TabStop = false;
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Location = new System.Drawing.Point(532, 25);
+            this.pictureBox9.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox9.Location = new System.Drawing.Point(575, 36);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(67, 50);
+            this.pictureBox9.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 3;
             this.pictureBox9.TabStop = false;
             // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
+            this.pictureBox29.Location = new System.Drawing.Point(173, 25);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox29.TabIndex = 3;
+            this.pictureBox29.TabStop = false;
+            // 
             // pictureBox10
             // 
-            this.pictureBox10.Location = new System.Drawing.Point(532, 24);
+            this.pictureBox10.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox10.Location = new System.Drawing.Point(575, 34);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(67, 50);
+            this.pictureBox10.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 3;
             this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox27
+            // 
+            this.pictureBox27.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
+            this.pictureBox27.Location = new System.Drawing.Point(173, 23);
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox27.TabIndex = 3;
+            this.pictureBox27.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox8.Location = new System.Drawing.Point(575, 35);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 3;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
+            this.pictureBox26.Location = new System.Drawing.Point(173, 27);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox26.TabIndex = 3;
+            this.pictureBox26.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox7.Location = new System.Drawing.Point(575, 36);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 3;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
+            this.pictureBox24.Location = new System.Drawing.Point(173, 26);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox24.TabIndex = 3;
+            this.pictureBox24.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox5.Location = new System.Drawing.Point(575, 35);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
+            this.pictureBox23.Location = new System.Drawing.Point(173, 28);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox23.TabIndex = 3;
+            this.pictureBox23.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox4.Location = new System.Drawing.Point(575, 35);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
+            this.pictureBox22.Location = new System.Drawing.Point(173, 25);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox22.TabIndex = 3;
+            this.pictureBox22.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox2.Location = new System.Drawing.Point(575, 34);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
+            this.pictureBox21.Location = new System.Drawing.Point(173, 23);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox21.TabIndex = 3;
+            this.pictureBox21.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
+            this.pictureBox11.Location = new System.Drawing.Point(706, 34);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 3;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox3.Location = new System.Drawing.Point(575, 34);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox1.Location = new System.Drawing.Point(575, 33);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
+            this.pictureBox25.Location = new System.Drawing.Point(173, 25);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox25.TabIndex = 3;
+            this.pictureBox25.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox6.Location = new System.Drawing.Point(575, 35);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 3;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
+            this.pictureBox12.Location = new System.Drawing.Point(706, 35);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 3;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
+            this.pictureBox13.Location = new System.Drawing.Point(706, 35);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox13.TabIndex = 3;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
+            this.pictureBox14.Location = new System.Drawing.Point(706, 36);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 3;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
+            this.pictureBox15.Location = new System.Drawing.Point(706, 36);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 3;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
+            this.pictureBox16.Location = new System.Drawing.Point(706, 36);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox16.TabIndex = 3;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
+            this.pictureBox17.Location = new System.Drawing.Point(706, 35);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox17.TabIndex = 3;
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
+            this.pictureBox18.Location = new System.Drawing.Point(706, 36);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox18.TabIndex = 3;
+            this.pictureBox18.TabStop = false;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
+            this.pictureBox19.Location = new System.Drawing.Point(706, 34);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox19.TabIndex = 3;
+            this.pictureBox19.TabStop = false;
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
+            this.pictureBox20.Location = new System.Drawing.Point(706, 37);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox20.TabIndex = 3;
+            this.pictureBox20.TabStop = false;
+            // 
+            // numericPerson
+            // 
+            this.numericPerson.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericPerson.Location = new System.Drawing.Point(41, 340);
+            this.numericPerson.Name = "numericPerson";
+            this.numericPerson.Size = new System.Drawing.Size(90, 31);
+            this.numericPerson.TabIndex = 5;
+            this.numericPerson.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // formSearch
             // 
@@ -1545,28 +1868,50 @@ namespace POS_App {
             this.panelFlight1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
+            this.row1.ResumeLayout(false);
+            this.row2.ResumeLayout(false);
+            this.row3.ResumeLayout(false);
+            this.row4.ResumeLayout(false);
+            this.row5.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.row6.ResumeLayout(false);
+            this.row7.ResumeLayout(false);
+            this.row8.ResumeLayout(false);
+            this.row9.ResumeLayout(false);
+            this.row10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericPerson)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1576,7 +1921,6 @@ namespace POS_App {
         private System.Windows.Forms.ComboBox comboTo;
         private System.Windows.Forms.ComboBox comboFrom;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textPersonNum;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -1591,11 +1935,11 @@ namespace POS_App {
         private System.Windows.Forms.Label labelID;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label btnLogout;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel row5;
+        private System.Windows.Forms.Panel row4;
+        private System.Windows.Forms.Panel row3;
+        private System.Windows.Forms.Panel row2;
+        private System.Windows.Forms.Panel row1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label6;
@@ -1627,33 +1971,32 @@ namespace POS_App {
         private System.Windows.Forms.Label labelFlightInfo1;
         private System.Windows.Forms.Label btnSearch;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel row7;
         private System.Windows.Forms.Label btnSelect7;
         private System.Windows.Forms.Label labelAirLine7;
         private System.Windows.Forms.Label labelFlightInfo7;
         private System.Windows.Forms.Label labelArrival7;
         private System.Windows.Forms.Label Departure7;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel row6;
         private System.Windows.Forms.Label btnSelect6;
         private System.Windows.Forms.Label labelAirLine6;
         private System.Windows.Forms.Label labelFlightInfo6;
         private System.Windows.Forms.Label labelArrival6;
         private System.Windows.Forms.Label Departure6;
-        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel row8;
         private System.Windows.Forms.Label btnSelect8;
         private System.Windows.Forms.Label labelAirLine8;
         private System.Windows.Forms.Label labelFlightInfo8;
         private System.Windows.Forms.Label labelArrival8;
         private System.Windows.Forms.Label Departure8;
-        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel row9;
         private System.Windows.Forms.Label btnSelect9;
         private System.Windows.Forms.Label labelAirLine9;
         private System.Windows.Forms.Label labelFlightInfo9;
         private System.Windows.Forms.Label labelArrival9;
         private System.Windows.Forms.Label Departure9;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel row10;
         private System.Windows.Forms.Label btnSelect10;
         private System.Windows.Forms.Label labelAirLine10;
         private System.Windows.Forms.Label labelFlightInfo10;
@@ -1681,15 +2024,40 @@ namespace POS_App {
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox21;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox30;
+        private System.Windows.Forms.PictureBox pictureBox28;
+        private System.Windows.Forms.PictureBox pictureBox29;
+        private System.Windows.Forms.PictureBox pictureBox27;
+        private System.Windows.Forms.PictureBox pictureBox26;
+        private System.Windows.Forms.PictureBox pictureBox24;
+        private System.Windows.Forms.PictureBox pictureBox23;
+        private System.Windows.Forms.PictureBox pictureBox22;
+        private System.Windows.Forms.PictureBox pictureBox25;
+        private System.Windows.Forms.PictureBox pictureBox31;
+        private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.PictureBox pictureBox20;
+        private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.PictureBox pictureBox19;
+        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.NumericUpDown numericPerson;
     }
 }

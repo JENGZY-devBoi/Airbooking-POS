@@ -35,7 +35,6 @@ namespace POS_App {
             // Fields
             var empAdapter = new SqlDataAdapter();
             var empTable = new DataTable();
-            DataRow[] empDR;
 
             // SQL command
             string sql = "SELECT * FROM employees ";
@@ -51,7 +50,7 @@ namespace POS_App {
                 $"and empPassword='{textPassword.Text}'";
             
             try {
-                empDR = empTable.Select(sql);
+                DataRow[] empDR = empTable.Select(sql);
 
                 // FetchData and Storage
                 emp.id = empDR[0]["empID"].ToString();
