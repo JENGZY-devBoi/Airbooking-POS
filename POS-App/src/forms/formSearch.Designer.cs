@@ -24,6 +24,7 @@ namespace POS_App {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             this.comboTo = new System.Windows.Forms.ComboBox();
             this.comboFrom = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -156,6 +157,7 @@ namespace POS_App {
             this.Departure5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
+            this.labelTimeNow = new System.Windows.Forms.Label();
             this.labelDateNow = new System.Windows.Forms.Label();
             this.labelDepart = new System.Windows.Forms.Label();
             this.labelArrival = new System.Windows.Forms.Label();
@@ -165,7 +167,7 @@ namespace POS_App {
             this.label50 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.labelTimeNow = new System.Windows.Forms.Label();
+            this.timerTimeNow = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericPerson)).BeginInit();
             this.panelFlight1.SuspendLayout();
@@ -275,6 +277,11 @@ namespace POS_App {
             // 
             this.numericPerson.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericPerson.Location = new System.Drawing.Point(41, 338);
+            this.numericPerson.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             this.numericPerson.Minimum = new decimal(new int[] {
             1,
             0,
@@ -515,8 +522,10 @@ namespace POS_App {
             this.btnSelect10.Name = "btnSelect10";
             this.btnSelect10.Size = new System.Drawing.Size(135, 100);
             this.btnSelect10.TabIndex = 2;
+            this.btnSelect10.Tag = "10";
             this.btnSelect10.Text = "select";
             this.btnSelect10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSelect10.Click += new System.EventHandler(this.btnSelect10_Click);
             // 
             // labelPrice10
             // 
@@ -641,8 +650,10 @@ namespace POS_App {
             this.btnSelect8.Name = "btnSelect8";
             this.btnSelect8.Size = new System.Drawing.Size(135, 100);
             this.btnSelect8.TabIndex = 2;
+            this.btnSelect8.Tag = "8";
             this.btnSelect8.Text = "select";
             this.btnSelect8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSelect8.Click += new System.EventHandler(this.btnSelect8_Click);
             // 
             // labelPrice8
             // 
@@ -767,8 +778,10 @@ namespace POS_App {
             this.btnSelect9.Name = "btnSelect9";
             this.btnSelect9.Size = new System.Drawing.Size(135, 100);
             this.btnSelect9.TabIndex = 2;
+            this.btnSelect9.Tag = "9";
             this.btnSelect9.Text = "select";
             this.btnSelect9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSelect9.Click += new System.EventHandler(this.btnSelect9_Click);
             // 
             // labelPrice9
             // 
@@ -893,8 +906,10 @@ namespace POS_App {
             this.btnSelect7.Name = "btnSelect7";
             this.btnSelect7.Size = new System.Drawing.Size(135, 100);
             this.btnSelect7.TabIndex = 2;
+            this.btnSelect7.Tag = "7";
             this.btnSelect7.Text = "select";
             this.btnSelect7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSelect7.Click += new System.EventHandler(this.btnSelect7_Click);
             // 
             // labelPrice7
             // 
@@ -1019,8 +1034,10 @@ namespace POS_App {
             this.btnSelect6.Name = "btnSelect6";
             this.btnSelect6.Size = new System.Drawing.Size(135, 100);
             this.btnSelect6.TabIndex = 2;
+            this.btnSelect6.Tag = "6";
             this.btnSelect6.Text = "select";
             this.btnSelect6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSelect6.Click += new System.EventHandler(this.btnSelect6_Click);
             // 
             // labelPrice6
             // 
@@ -1145,8 +1162,10 @@ namespace POS_App {
             this.btnSelect4.Name = "btnSelect4";
             this.btnSelect4.Size = new System.Drawing.Size(135, 100);
             this.btnSelect4.TabIndex = 2;
+            this.btnSelect4.Tag = "4";
             this.btnSelect4.Text = "select";
             this.btnSelect4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSelect4.Click += new System.EventHandler(this.btnSelect4_Click);
             // 
             // labelPrice4
             // 
@@ -1271,8 +1290,10 @@ namespace POS_App {
             this.btnSelect3.Name = "btnSelect3";
             this.btnSelect3.Size = new System.Drawing.Size(135, 100);
             this.btnSelect3.TabIndex = 2;
+            this.btnSelect3.Tag = "3";
             this.btnSelect3.Text = "select";
             this.btnSelect3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSelect3.Click += new System.EventHandler(this.btnSelect3_Click);
             // 
             // labelPrice3
             // 
@@ -1397,8 +1418,10 @@ namespace POS_App {
             this.btnSelect2.Name = "btnSelect2";
             this.btnSelect2.Size = new System.Drawing.Size(135, 100);
             this.btnSelect2.TabIndex = 2;
+            this.btnSelect2.Tag = "2";
             this.btnSelect2.Text = "select";
             this.btnSelect2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSelect2.Click += new System.EventHandler(this.btnSelect2_Click);
             // 
             // labelPrice2
             // 
@@ -1534,8 +1557,10 @@ namespace POS_App {
             this.btnSelect1.Name = "btnSelect1";
             this.btnSelect1.Size = new System.Drawing.Size(135, 100);
             this.btnSelect1.TabIndex = 2;
+            this.btnSelect1.Tag = "1";
             this.btnSelect1.Text = "select";
             this.btnSelect1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSelect1.Click += new System.EventHandler(this.btnSelect1_Click);
             // 
             // labelPrice1
             // 
@@ -1660,8 +1685,10 @@ namespace POS_App {
             this.btnSelect5.Name = "btnSelect5";
             this.btnSelect5.Size = new System.Drawing.Size(135, 100);
             this.btnSelect5.TabIndex = 2;
+            this.btnSelect5.Tag = "5";
             this.btnSelect5.Text = "select";
             this.btnSelect5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSelect5.Click += new System.EventHandler(this.btnSelect5_Click);
             // 
             // labelPrice5
             // 
@@ -1753,11 +1780,22 @@ namespace POS_App {
             this.label11.TabIndex = 2;
             this.label11.Text = "Flights";
             // 
+            // labelTimeNow
+            // 
+            this.labelTimeNow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.labelTimeNow.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTimeNow.Location = new System.Drawing.Point(888, 34);
+            this.labelTimeNow.Name = "labelTimeNow";
+            this.labelTimeNow.Size = new System.Drawing.Size(136, 30);
+            this.labelTimeNow.TabIndex = 2;
+            this.labelTimeNow.Text = "TimeNow";
+            this.labelTimeNow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // labelDateNow
             // 
             this.labelDateNow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.labelDateNow.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDateNow.Location = new System.Drawing.Point(888, 36);
+            this.labelDateNow.Location = new System.Drawing.Point(888, 6);
             this.labelDateNow.Name = "labelDateNow";
             this.labelDateNow.Size = new System.Drawing.Size(136, 28);
             this.labelDateNow.TabIndex = 2;
@@ -1858,16 +1896,10 @@ namespace POS_App {
             this.label15.TabIndex = 2;
             this.label15.Text = "Price";
             // 
-            // labelTimeNow
+            // timerTimeNow
             // 
-            this.labelTimeNow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.labelTimeNow.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTimeNow.Location = new System.Drawing.Point(888, 6);
-            this.labelTimeNow.Name = "labelTimeNow";
-            this.labelTimeNow.Size = new System.Drawing.Size(136, 30);
-            this.labelTimeNow.TabIndex = 2;
-            this.labelTimeNow.Text = "TimeNow";
-            this.labelTimeNow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.timerTimeNow.Enabled = true;
+            this.timerTimeNow.Tick += new System.EventHandler(this.timerTimeNow_Tick);
             // 
             // formSearch
             // 
@@ -2080,5 +2112,6 @@ namespace POS_App {
         private System.Windows.Forms.NumericUpDown numericPerson;
         private System.Windows.Forms.ComboBox comboDepart;
         private System.Windows.Forms.Label labelTimeNow;
+        private System.Windows.Forms.Timer timerTimeNow;
     }
 }

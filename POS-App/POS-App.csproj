@@ -47,6 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\class\passengerData.cs" />
+    <Compile Include="src\class\flightData.cs" />
     <Compile Include="src\forms\formSearch.cs">
       <SubType>Form</SubType>
     </Compile>

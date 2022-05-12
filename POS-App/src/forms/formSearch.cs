@@ -20,6 +20,7 @@ namespace POS_App {
         private List<string> lsFlightTo = new List<string>();
         private List<string> lsDateDepart = new List<string>();
         private List<DateTime> lsDateDepartDT = new List<DateTime>();
+        private List<string> lsFlightID = new List<string>();
         #endregion
 
         public formSearch() {
@@ -28,6 +29,11 @@ namespace POS_App {
 
         private void formSearch_Load(object sender, EventArgs e) {
             init();
+
+            // Timer Now
+            timerTimeNow.Start();
+            labelDateNow.Text = DateTime.Now.ToString("MM/dd/yyyy");
+            labelTimeNow.Text = DateTime.Now.ToString("HH:mm:ss");
         }
 
         private void btnSearch_Click(object sender, EventArgs e) {
@@ -110,6 +116,8 @@ namespace POS_App {
 
         private void fetchDataList() {
             // CLEAR DATA
+            lsFlightID.Clear();
+
             // SET Visible panel turn off
             foreach (var itm in arrPanel) itm.Visible = false;
 
@@ -135,21 +143,23 @@ namespace POS_App {
 
                 int idx = 0;
                 foreach (var itm in flightDR) {
-                    // panel
-                    arrPanel[idx].Visible = true;
 
+                    string fID = itm["flightID"].ToString();
                     string fExitTime = itm["flightExitTime"].ToString();
                     string fEntryTime = itm["flightEntryTime"].ToString();
                     string fExitDate = itm["flightExitDate"].ToString();
                     string fEntryDate = itm["flightEntryDate"].ToString();
                     string fPrice = itm["flightPrice"].ToString();
-
+                  
                     // components
                     arrDeparture[idx].Text = fExitTime;
                     arrArrival[idx].Text = fEntryTime;
                     arrFlightInfo[idx].Text = calcDurFlight(fExitTime, fEntryTime);
                     arrPrice[idx].Text = fPrice;
 
+                    // push flight ID
+                    lsFlightID.Add(fID);
+            
                     idx++;
                 }
 
@@ -164,7 +174,7 @@ namespace POS_App {
 
         // BAD PRACTICE!!
         private string calcDurFlight(string from, string to) {
-            Console.WriteLine(from + "\n" + to);
+            //Console.WriteLine(from + "\n" + to);
             string[] strFrom = from.Split(':');
             string[] strTo = to.Split(':');
 
@@ -224,7 +234,7 @@ namespace POS_App {
                 dbConfig.connection.Close();
                 return true;
             } catch (Exception ex) {
-                Console.WriteLine("Error");
+                Console.WriteLine(ex.Message);
                 dbConfig.connection.Close();
                 comboTo.Enabled = false;
                 return false;
@@ -280,5 +290,75 @@ namespace POS_App {
             }
         }
 
+        private void selectFlight(string i) {
+            // Minus by 1 because, c# index base on zero
+            int idx = Convert.ToInt32(i) - 1;
+
+            // Check
+            //Console.WriteLine(arrDeparture[idx].Text);
+            //Console.WriteLine(arrArrival[idx].Text);
+            //Console.WriteLine(arrFlightInfo[idx].Text);
+            //Console.WriteLine(arrPrice[idx].Text);
+
+            flightData.flightID = lsFlightID[idx];
+            flightData.flightFrom = comboFrom.SelectedItem.ToString();
+            flightData.flightTo = comboTo.SelectedItem.ToString();
+            flightData.flightDepart = arrDeparture[idx].Text;
+            flightData.flightArrival = arrArrival[idx].Text;
+            flightData.flightInfo = arrFlightInfo[idx].Text;
+            flightData.flightDateTime = comboDepart.SelectedItem.ToString();
+
+            // passenger number
+            passengerData.passengerNum = Convert.ToInt32(numericPerson.Value);
+
+            // go to passengerInfo
+
+        }
+
+        private void timerTimeNow_Tick(object sender, EventArgs e) {
+            labelTimeNow.Text = DateTime.Now.ToString("HH:mm:ss");
+            timerTimeNow.Start();
+        }
+
+        private void btnSelect1_Click(object sender, EventArgs e) {
+            //selectFlight(Convert.ToInt32(btnSelect1.Tag.ToString()));
+            selectFlight(btnSelect1.Tag.ToString());
+        }
+
+        private void btnSelect2_Click(object sender, EventArgs e) {
+            selectFlight(btnSelect2.Tag.ToString());
+        }
+
+        private void btnSelect3_Click(object sender, EventArgs e) {
+            selectFlight(btnSelect3.Tag.ToString());
+        }
+
+        private void btnSelect4_Click(object sender, EventArgs e) {
+            selectFlight(btnSelect4.Tag.ToString());
+        }
+
+        private void btnSelect5_Click(object sender, EventArgs e) {
+            selectFlight(btnSelect5.Tag.ToString());
+        }
+
+        private void btnSelect6_Click(object sender, EventArgs e) {
+            selectFlight(btnSelect6.Tag.ToString());
+        }
+
+        private void btnSelect7_Click(object sender, EventArgs e) {
+            selectFlight(btnSelect7.Tag.ToString());
+        }
+
+        private void btnSelect8_Click(object sender, EventArgs e) {
+            selectFlight(btnSelect8.Tag.ToString());
+        }
+
+        private void btnSelect9_Click(object sender, EventArgs e) {
+            selectFlight(btnSelect9.Tag.ToString());
+        }
+
+        private void btnSelect10_Click(object sender, EventArgs e) {
+            selectFlight(btnSelect10.Tag.ToString());
+        }
     }
 }
