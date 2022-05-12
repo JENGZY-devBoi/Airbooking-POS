@@ -99,18 +99,6 @@ namespace POS_App {
                     ); 
                 return false;
             }
-
-            // Valid zero or negative number of passenger
-            if (numericPerson.Value < 1) {
-                MessageBox.Show
-                    (
-                        "A number of passengers Cannot be 0 or a negative number.",
-                        "Error",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error
-                    );
-                return false;
-            }
             return true;
         }
 
@@ -308,9 +296,6 @@ namespace POS_App {
             flightData.flightArrival = arrArrival[idx].Text;
             flightData.flightInfo = arrFlightInfo[idx].Text;
             flightData.flightDateTime = comboDepart.SelectedItem.ToString();
-
-            // passenger number
-            passengerData.passengerNum = Convert.ToInt32(numericPerson.Value);
 
             // GO TO passengerInfo form
             var passengerForm = new formPassengerInfo();

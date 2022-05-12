@@ -28,7 +28,6 @@ namespace POS_App {
             this.comboTo = new System.Windows.Forms.ComboBox();
             this.comboFrom = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.numericPerson = new System.Windows.Forms.NumericUpDown();
             this.btnSearch = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -38,13 +37,15 @@ namespace POS_App {
             this.btnLogout = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.comboDepart = new System.Windows.Forms.ComboBox();
             this.panelFlight1 = new System.Windows.Forms.Panel();
             this.row10 = new System.Windows.Forms.Panel();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.btnSelect10 = new System.Windows.Forms.Label();
             this.labelPrice10 = new System.Windows.Forms.Label();
             this.labelAirLine10 = new System.Windows.Forms.Label();
@@ -53,6 +54,9 @@ namespace POS_App {
             this.label60 = new System.Windows.Forms.Label();
             this.Departure10 = new System.Windows.Forms.Label();
             this.row8 = new System.Windows.Forms.Panel();
+            this.pictureBox28 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.btnSelect8 = new System.Windows.Forms.Label();
             this.labelPrice8 = new System.Windows.Forms.Label();
             this.labelAirLine8 = new System.Windows.Forms.Label();
@@ -61,6 +65,9 @@ namespace POS_App {
             this.label58 = new System.Windows.Forms.Label();
             this.Departure8 = new System.Windows.Forms.Label();
             this.row9 = new System.Windows.Forms.Panel();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.btnSelect9 = new System.Windows.Forms.Label();
             this.labelPrice9 = new System.Windows.Forms.Label();
             this.labelAirLine9 = new System.Windows.Forms.Label();
@@ -69,6 +76,9 @@ namespace POS_App {
             this.label59 = new System.Windows.Forms.Label();
             this.Departure9 = new System.Windows.Forms.Label();
             this.row7 = new System.Windows.Forms.Panel();
+            this.pictureBox27 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.btnSelect7 = new System.Windows.Forms.Label();
             this.labelPrice7 = new System.Windows.Forms.Label();
             this.labelAirLine7 = new System.Windows.Forms.Label();
@@ -77,6 +87,9 @@ namespace POS_App {
             this.label57 = new System.Windows.Forms.Label();
             this.Departure7 = new System.Windows.Forms.Label();
             this.row6 = new System.Windows.Forms.Panel();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.btnSelect6 = new System.Windows.Forms.Label();
             this.labelPrice6 = new System.Windows.Forms.Label();
             this.labelAirLine6 = new System.Windows.Forms.Label();
@@ -85,6 +98,9 @@ namespace POS_App {
             this.label56 = new System.Windows.Forms.Label();
             this.Departure6 = new System.Windows.Forms.Label();
             this.row4 = new System.Windows.Forms.Panel();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnSelect4 = new System.Windows.Forms.Label();
             this.labelPrice4 = new System.Windows.Forms.Label();
             this.labelAirLine4 = new System.Windows.Forms.Label();
@@ -93,6 +109,9 @@ namespace POS_App {
             this.label54 = new System.Windows.Forms.Label();
             this.Departure4 = new System.Windows.Forms.Label();
             this.row3 = new System.Windows.Forms.Panel();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnSelect3 = new System.Windows.Forms.Label();
             this.labelPrice3 = new System.Windows.Forms.Label();
             this.labelAirLine3 = new System.Windows.Forms.Label();
@@ -101,6 +120,9 @@ namespace POS_App {
             this.label53 = new System.Windows.Forms.Label();
             this.Departure3 = new System.Windows.Forms.Label();
             this.row2 = new System.Windows.Forms.Panel();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnSelect2 = new System.Windows.Forms.Label();
             this.labelPrice2 = new System.Windows.Forms.Label();
             this.labelAirLine2 = new System.Windows.Forms.Label();
@@ -109,6 +131,10 @@ namespace POS_App {
             this.label52 = new System.Windows.Forms.Label();
             this.Departure2 = new System.Windows.Forms.Label();
             this.row1 = new System.Windows.Forms.Panel();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSelect1 = new System.Windows.Forms.Label();
             this.labelPrice1 = new System.Windows.Forms.Label();
             this.labelAirLine1 = new System.Windows.Forms.Label();
@@ -117,6 +143,9 @@ namespace POS_App {
             this.label51 = new System.Windows.Forms.Label();
             this.Departure1 = new System.Windows.Forms.Label();
             this.row5 = new System.Windows.Forms.Panel();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btnSelect5 = new System.Windows.Forms.Label();
             this.labelPrice5 = new System.Windows.Forms.Label();
             this.labelAirLine5 = new System.Windows.Forms.Label();
@@ -137,83 +166,51 @@ namespace POS_App {
             this.label39 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.timerTimeNow = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericPerson)).BeginInit();
             this.panelFlight1.SuspendLayout();
             this.row10.SuspendLayout();
-            this.row8.SuspendLayout();
-            this.row9.SuspendLayout();
-            this.row7.SuspendLayout();
-            this.row6.SuspendLayout();
-            this.row4.SuspendLayout();
-            this.row3.SuspendLayout();
-            this.row2.SuspendLayout();
-            this.row1.SuspendLayout();
-            this.row5.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
+            this.row8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.row9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.row7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.row6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.row4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.row3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.row2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.row1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.row5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // comboTo
@@ -250,7 +247,6 @@ namespace POS_App {
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.numericPerson);
             this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
@@ -260,7 +256,6 @@ namespace POS_App {
             this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label7);
@@ -273,36 +268,12 @@ namespace POS_App {
             this.panel1.Size = new System.Drawing.Size(394, 670);
             this.panel1.TabIndex = 1;
             // 
-            // numericPerson
-            // 
-            this.numericPerson.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericPerson.Location = new System.Drawing.Point(41, 338);
-            this.numericPerson.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.numericPerson.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericPerson.Name = "numericPerson";
-            this.numericPerson.Size = new System.Drawing.Size(90, 31);
-            this.numericPerson.TabIndex = 5;
-            this.numericPerson.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericPerson.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(37, 411);
+            this.btnSearch.Location = new System.Drawing.Point(40, 335);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(313, 45);
             this.btnSearch.TabIndex = 4;
@@ -395,16 +366,6 @@ namespace POS_App {
             this.label3.TabIndex = 2;
             this.label3.Text = "From";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(36, 308);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 28);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Passenger";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -482,6 +443,36 @@ namespace POS_App {
             this.row10.Name = "row10";
             this.row10.Size = new System.Drawing.Size(1009, 100);
             this.row10.TabIndex = 3;
+            // 
+            // pictureBox30
+            // 
+            this.pictureBox30.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
+            this.pictureBox30.Location = new System.Drawing.Point(173, 24);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox30.TabIndex = 3;
+            this.pictureBox30.TabStop = false;
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
+            this.pictureBox20.Location = new System.Drawing.Point(706, 37);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox20.TabIndex = 3;
+            this.pictureBox20.TabStop = false;
+            // 
+            // pictureBox31
+            // 
+            this.pictureBox31.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox31.Location = new System.Drawing.Point(575, 37);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox31.TabIndex = 3;
+            this.pictureBox31.TabStop = false;
             // 
             // btnSelect10
             // 
@@ -581,6 +572,36 @@ namespace POS_App {
             this.row8.Size = new System.Drawing.Size(1009, 100);
             this.row8.TabIndex = 3;
             // 
+            // pictureBox28
+            // 
+            this.pictureBox28.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
+            this.pictureBox28.Location = new System.Drawing.Point(173, 24);
+            this.pictureBox28.Name = "pictureBox28";
+            this.pictureBox28.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox28.TabIndex = 3;
+            this.pictureBox28.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
+            this.pictureBox18.Location = new System.Drawing.Point(706, 36);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox18.TabIndex = 3;
+            this.pictureBox18.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox9.Location = new System.Drawing.Point(575, 36);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 3;
+            this.pictureBox9.TabStop = false;
+            // 
             // btnSelect8
             // 
             this.btnSelect8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -678,6 +699,36 @@ namespace POS_App {
             this.row9.Name = "row9";
             this.row9.Size = new System.Drawing.Size(1009, 100);
             this.row9.TabIndex = 3;
+            // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
+            this.pictureBox29.Location = new System.Drawing.Point(173, 25);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox29.TabIndex = 3;
+            this.pictureBox29.TabStop = false;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
+            this.pictureBox19.Location = new System.Drawing.Point(706, 34);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox19.TabIndex = 3;
+            this.pictureBox19.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox10.Location = new System.Drawing.Point(575, 34);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 3;
+            this.pictureBox10.TabStop = false;
             // 
             // btnSelect9
             // 
@@ -777,6 +828,36 @@ namespace POS_App {
             this.row7.Size = new System.Drawing.Size(1009, 100);
             this.row7.TabIndex = 3;
             // 
+            // pictureBox27
+            // 
+            this.pictureBox27.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
+            this.pictureBox27.Location = new System.Drawing.Point(173, 23);
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox27.TabIndex = 3;
+            this.pictureBox27.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
+            this.pictureBox17.Location = new System.Drawing.Point(706, 35);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox17.TabIndex = 3;
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox8.Location = new System.Drawing.Point(575, 35);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 3;
+            this.pictureBox8.TabStop = false;
+            // 
             // btnSelect7
             // 
             this.btnSelect7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -874,6 +955,36 @@ namespace POS_App {
             this.row6.Name = "row6";
             this.row6.Size = new System.Drawing.Size(1009, 100);
             this.row6.TabIndex = 3;
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
+            this.pictureBox26.Location = new System.Drawing.Point(173, 27);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox26.TabIndex = 3;
+            this.pictureBox26.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
+            this.pictureBox16.Location = new System.Drawing.Point(706, 36);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox16.TabIndex = 3;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox7.Location = new System.Drawing.Point(575, 36);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 3;
+            this.pictureBox7.TabStop = false;
             // 
             // btnSelect6
             // 
@@ -973,6 +1084,36 @@ namespace POS_App {
             this.row4.Size = new System.Drawing.Size(1009, 100);
             this.row4.TabIndex = 3;
             // 
+            // pictureBox24
+            // 
+            this.pictureBox24.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
+            this.pictureBox24.Location = new System.Drawing.Point(173, 26);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox24.TabIndex = 3;
+            this.pictureBox24.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
+            this.pictureBox14.Location = new System.Drawing.Point(706, 36);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 3;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox5.Location = new System.Drawing.Point(575, 35);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
+            // 
             // btnSelect4
             // 
             this.btnSelect4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -1071,6 +1212,36 @@ namespace POS_App {
             this.row3.Size = new System.Drawing.Size(1009, 100);
             this.row3.TabIndex = 3;
             // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
+            this.pictureBox23.Location = new System.Drawing.Point(173, 28);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox23.TabIndex = 3;
+            this.pictureBox23.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
+            this.pictureBox13.Location = new System.Drawing.Point(706, 35);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox13.TabIndex = 3;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox4.Location = new System.Drawing.Point(575, 35);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            // 
             // btnSelect3
             // 
             this.btnSelect3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -1168,6 +1339,36 @@ namespace POS_App {
             this.row2.Name = "row2";
             this.row2.Size = new System.Drawing.Size(1009, 100);
             this.row2.TabIndex = 3;
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
+            this.pictureBox22.Location = new System.Drawing.Point(173, 25);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox22.TabIndex = 3;
+            this.pictureBox22.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
+            this.pictureBox12.Location = new System.Drawing.Point(706, 35);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 3;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox2.Location = new System.Drawing.Point(575, 34);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
             // 
             // btnSelect2
             // 
@@ -1268,6 +1469,46 @@ namespace POS_App {
             this.row1.Size = new System.Drawing.Size(1009, 100);
             this.row1.TabIndex = 3;
             // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
+            this.pictureBox21.Location = new System.Drawing.Point(173, 23);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox21.TabIndex = 3;
+            this.pictureBox21.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
+            this.pictureBox11.Location = new System.Drawing.Point(706, 34);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 3;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox3.Location = new System.Drawing.Point(575, 34);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox1.Location = new System.Drawing.Point(575, 33);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnSelect1
             // 
             this.btnSelect1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -1365,6 +1606,36 @@ namespace POS_App {
             this.row5.Name = "row5";
             this.row5.Size = new System.Drawing.Size(1009, 100);
             this.row5.TabIndex = 3;
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
+            this.pictureBox25.Location = new System.Drawing.Point(173, 25);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox25.TabIndex = 3;
+            this.pictureBox25.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
+            this.pictureBox15.Location = new System.Drawing.Point(706, 36);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(24, 26);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 3;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::POS_App.Properties.Resources.icons8_airport_24;
+            this.pictureBox6.Location = new System.Drawing.Point(575, 35);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(24, 27);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 3;
+            this.pictureBox6.TabStop = false;
             // 
             // btnSelect5
             // 
@@ -1466,9 +1737,9 @@ namespace POS_App {
             this.label11.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(35, 16);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(251, 36);
+            this.label11.Size = new System.Drawing.Size(134, 36);
             this.label11.TabIndex = 2;
-            this.label11.Text = "Flights - Search - Select";
+            this.label11.Text = "Select Flight";
             // 
             // labelTimeNow
             // 
@@ -1591,316 +1862,6 @@ namespace POS_App {
             this.timerTimeNow.Enabled = true;
             this.timerTimeNow.Tick += new System.EventHandler(this.timerTimeNow_Tick);
             // 
-            // pictureBox30
-            // 
-            this.pictureBox30.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
-            this.pictureBox30.Location = new System.Drawing.Point(173, 24);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox30.TabIndex = 3;
-            this.pictureBox30.TabStop = false;
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
-            this.pictureBox20.Location = new System.Drawing.Point(706, 37);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(24, 26);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox20.TabIndex = 3;
-            this.pictureBox20.TabStop = false;
-            // 
-            // pictureBox31
-            // 
-            this.pictureBox31.Image = global::POS_App.Properties.Resources.icons8_airport_24;
-            this.pictureBox31.Location = new System.Drawing.Point(575, 37);
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(24, 27);
-            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox31.TabIndex = 3;
-            this.pictureBox31.TabStop = false;
-            // 
-            // pictureBox28
-            // 
-            this.pictureBox28.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
-            this.pictureBox28.Location = new System.Drawing.Point(173, 24);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox28.TabIndex = 3;
-            this.pictureBox28.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
-            this.pictureBox18.Location = new System.Drawing.Point(706, 36);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(24, 26);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox18.TabIndex = 3;
-            this.pictureBox18.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::POS_App.Properties.Resources.icons8_airport_24;
-            this.pictureBox9.Location = new System.Drawing.Point(575, 36);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(24, 27);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 3;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox29
-            // 
-            this.pictureBox29.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
-            this.pictureBox29.Location = new System.Drawing.Point(173, 25);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox29.TabIndex = 3;
-            this.pictureBox29.TabStop = false;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
-            this.pictureBox19.Location = new System.Drawing.Point(706, 34);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(24, 26);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox19.TabIndex = 3;
-            this.pictureBox19.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::POS_App.Properties.Resources.icons8_airport_24;
-            this.pictureBox10.Location = new System.Drawing.Point(575, 34);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(24, 27);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 3;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox27
-            // 
-            this.pictureBox27.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
-            this.pictureBox27.Location = new System.Drawing.Point(173, 23);
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox27.TabIndex = 3;
-            this.pictureBox27.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
-            this.pictureBox17.Location = new System.Drawing.Point(706, 35);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(24, 26);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox17.TabIndex = 3;
-            this.pictureBox17.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::POS_App.Properties.Resources.icons8_airport_24;
-            this.pictureBox8.Location = new System.Drawing.Point(575, 35);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(24, 27);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 3;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox26
-            // 
-            this.pictureBox26.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
-            this.pictureBox26.Location = new System.Drawing.Point(173, 27);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox26.TabIndex = 3;
-            this.pictureBox26.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
-            this.pictureBox16.Location = new System.Drawing.Point(706, 36);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(24, 26);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox16.TabIndex = 3;
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::POS_App.Properties.Resources.icons8_airport_24;
-            this.pictureBox7.Location = new System.Drawing.Point(575, 36);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(24, 27);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 3;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox24
-            // 
-            this.pictureBox24.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
-            this.pictureBox24.Location = new System.Drawing.Point(173, 26);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox24.TabIndex = 3;
-            this.pictureBox24.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
-            this.pictureBox14.Location = new System.Drawing.Point(706, 36);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(24, 26);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 3;
-            this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::POS_App.Properties.Resources.icons8_airport_24;
-            this.pictureBox5.Location = new System.Drawing.Point(575, 35);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(24, 27);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 3;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox23
-            // 
-            this.pictureBox23.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
-            this.pictureBox23.Location = new System.Drawing.Point(173, 28);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox23.TabIndex = 3;
-            this.pictureBox23.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
-            this.pictureBox13.Location = new System.Drawing.Point(706, 35);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(24, 26);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 3;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::POS_App.Properties.Resources.icons8_airport_24;
-            this.pictureBox4.Location = new System.Drawing.Point(575, 35);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 27);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox22
-            // 
-            this.pictureBox22.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
-            this.pictureBox22.Location = new System.Drawing.Point(173, 25);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox22.TabIndex = 3;
-            this.pictureBox22.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
-            this.pictureBox12.Location = new System.Drawing.Point(706, 35);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(24, 26);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 3;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::POS_App.Properties.Resources.icons8_airport_24;
-            this.pictureBox2.Location = new System.Drawing.Point(575, 34);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 27);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
-            this.pictureBox21.Location = new System.Drawing.Point(173, 23);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox21.TabIndex = 3;
-            this.pictureBox21.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
-            this.pictureBox11.Location = new System.Drawing.Point(706, 34);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(24, 26);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 3;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::POS_App.Properties.Resources.icons8_airport_24;
-            this.pictureBox3.Location = new System.Drawing.Point(575, 34);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 27);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::POS_App.Properties.Resources.icons8_airport_24;
-            this.pictureBox1.Location = new System.Drawing.Point(575, 33);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 27);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.Image = global::POS_App.Properties.Resources.icons8_arrow_24;
-            this.pictureBox25.Location = new System.Drawing.Point(173, 25);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox25.TabIndex = 3;
-            this.pictureBox25.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = global::POS_App.Properties.Resources.icons8_thai_baht_48;
-            this.pictureBox15.Location = new System.Drawing.Point(706, 36);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(24, 26);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 3;
-            this.pictureBox15.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::POS_App.Properties.Resources.icons8_airport_24;
-            this.pictureBox6.Location = new System.Drawing.Point(575, 35);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(24, 27);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 3;
-            this.pictureBox6.TabStop = false;
-            // 
             // formSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1917,53 +1878,52 @@ namespace POS_App {
             this.Load += new System.EventHandler(this.formSearch_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericPerson)).EndInit();
             this.panelFlight1.ResumeLayout(false);
             this.row10.ResumeLayout(false);
-            this.row8.ResumeLayout(false);
-            this.row9.ResumeLayout(false);
-            this.row7.ResumeLayout(false);
-            this.row6.ResumeLayout(false);
-            this.row4.ResumeLayout(false);
-            this.row3.ResumeLayout(false);
-            this.row2.ResumeLayout(false);
-            this.row1.ResumeLayout(false);
-            this.row5.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
+            this.row8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.row9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.row7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.row6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.row4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.row3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.row2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.row1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.row5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1973,7 +1933,6 @@ namespace POS_App {
         private System.Windows.Forms.ComboBox comboTo;
         private System.Windows.Forms.ComboBox comboFrom;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
@@ -2109,7 +2068,6 @@ namespace POS_App {
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.NumericUpDown numericPerson;
         private System.Windows.Forms.ComboBox comboDepart;
         private System.Windows.Forms.Label labelTimeNow;
         private System.Windows.Forms.Timer timerTimeNow;

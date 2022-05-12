@@ -29,15 +29,9 @@ namespace POS_App {
             this.label11 = new System.Windows.Forms.Label();
             this.labelTimeNow = new System.Windows.Forms.Label();
             this.labelDateNow = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.panelFlight1 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.numericPerson = new System.Windows.Forms.NumericUpDown();
-            this.btnSearch = new System.Windows.Forms.Label();
+            this.btnSubmit = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.labelLname = new System.Windows.Forms.Label();
@@ -46,7 +40,6 @@ namespace POS_App {
             this.btnLogout = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -54,10 +47,25 @@ namespace POS_App {
             this.comboTo = new System.Windows.Forms.ComboBox();
             this.comboFrom = new System.Windows.Forms.ComboBox();
             this.timerTimeNow = new System.Windows.Forms.Timer(this.components);
+            this.comboTitle = new System.Windows.Forms.ComboBox();
+            this.textFname = new System.Windows.Forms.TextBox();
+            this.textLname = new System.Windows.Forms.TextBox();
+            this.textEmail = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.dateTimeDOB = new System.Windows.Forms.DateTimePicker();
+            this.panelFlight1 = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboEmail = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericPerson)).BeginInit();
+            this.panelFlight1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -80,9 +88,9 @@ namespace POS_App {
             this.label11.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(35, 16);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(79, 36);
+            this.label11.Size = new System.Drawing.Size(242, 36);
             this.label11.TabIndex = 2;
-            this.label11.Text = "Flights";
+            this.label11.Text = "Passenger Information";
             // 
             // labelTimeNow
             // 
@@ -106,57 +114,10 @@ namespace POS_App {
             this.labelDateNow.Text = "DateNow";
             this.labelDateNow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label50.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(36, 22);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(36, 28);
-            this.label50.TabIndex = 2;
-            this.label50.Text = "No.";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label39.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(924, 22);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(63, 28);
-            this.label39.TabIndex = 2;
-            this.label39.Text = "Action";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label15.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(752, 22);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(51, 28);
-            this.label15.TabIndex = 2;
-            this.label15.Text = "Price";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label14.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(621, 22);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(61, 28);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "Airline";
-            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel8.Controls.Add(this.label50);
-            this.panel8.Controls.Add(this.label39);
-            this.panel8.Controls.Add(this.label15);
-            this.panel8.Controls.Add(this.label14);
+            this.panel8.Controls.Add(this.btnBack);
             this.panel8.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel8.ForeColor = System.Drawing.Color.Black;
             this.panel8.Location = new System.Drawing.Point(-1, 66);
@@ -164,21 +125,10 @@ namespace POS_App {
             this.panel8.Size = new System.Drawing.Size(1058, 68);
             this.panel8.TabIndex = 3;
             // 
-            // panelFlight1
-            // 
-            this.panelFlight1.AutoScroll = true;
-            this.panelFlight1.BackColor = System.Drawing.Color.White;
-            this.panelFlight1.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelFlight1.Location = new System.Drawing.Point(-1, 132);
-            this.panelFlight1.Name = "panelFlight1";
-            this.panelFlight1.Size = new System.Drawing.Size(1058, 537);
-            this.panelFlight1.TabIndex = 4;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.numericPerson);
-            this.panel1.Controls.Add(this.btnSearch);
+            this.panel1.Controls.Add(this.btnSubmit);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.labelLname);
@@ -187,7 +137,6 @@ namespace POS_App {
             this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label7);
@@ -200,41 +149,18 @@ namespace POS_App {
             this.panel1.Size = new System.Drawing.Size(394, 670);
             this.panel1.TabIndex = 5;
             // 
-            // numericPerson
+            // btnSubmit
             // 
-            this.numericPerson.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericPerson.Location = new System.Drawing.Point(41, 338);
-            this.numericPerson.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.numericPerson.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericPerson.Name = "numericPerson";
-            this.numericPerson.Size = new System.Drawing.Size(90, 31);
-            this.numericPerson.TabIndex = 5;
-            this.numericPerson.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericPerson.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(37, 411);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(313, 45);
-            this.btnSearch.TabIndex = 4;
-            this.btnSearch.Text = "search";
-            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnSubmit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSubmit.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.Location = new System.Drawing.Point(39, 331);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(313, 45);
+            this.btnSubmit.TabIndex = 0;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // label10
             // 
@@ -298,6 +224,7 @@ namespace POS_App {
             this.btnLogout.Size = new System.Drawing.Size(76, 33);
             this.btnLogout.TabIndex = 2;
             this.btnLogout.Text = "Log out";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // label8
             // 
@@ -319,16 +246,6 @@ namespace POS_App {
             this.label3.Size = new System.Drawing.Size(52, 28);
             this.label3.TabIndex = 2;
             this.label3.Text = "From";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(36, 308);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 28);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Passenger";
             // 
             // label4
             // 
@@ -361,7 +278,7 @@ namespace POS_App {
             // 
             // comboDepart
             // 
-            this.comboDepart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboDepart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
             this.comboDepart.Enabled = false;
             this.comboDepart.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboDepart.FormattingEnabled = true;
@@ -372,7 +289,7 @@ namespace POS_App {
             // 
             // comboTo
             // 
-            this.comboTo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboTo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
             this.comboTo.Enabled = false;
             this.comboTo.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboTo.FormattingEnabled = true;
@@ -383,17 +300,10 @@ namespace POS_App {
             // 
             // comboFrom
             // 
-            this.comboFrom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboFrom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
+            this.comboFrom.Enabled = false;
             this.comboFrom.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboFrom.FormattingEnabled = true;
-            this.comboFrom.Items.AddRange(new object[] {
-            "DMK",
-            "CNX",
-            "HKT",
-            "PHS",
-            "CEI",
-            "HDY",
-            "KKC"});
             this.comboFrom.Location = new System.Drawing.Point(41, 109);
             this.comboFrom.Name = "comboFrom";
             this.comboFrom.Size = new System.Drawing.Size(309, 36);
@@ -403,6 +313,179 @@ namespace POS_App {
             // 
             this.timerTimeNow.Enabled = true;
             this.timerTimeNow.Tick += new System.EventHandler(this.timerTimeNow_Tick);
+            // 
+            // comboTitle
+            // 
+            this.comboTitle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboTitle.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboTitle.FormattingEnabled = true;
+            this.comboTitle.Items.AddRange(new object[] {
+            "Mr",
+            "Mrs",
+            "Ms"});
+            this.comboTitle.Location = new System.Drawing.Point(374, 84);
+            this.comboTitle.Name = "comboTitle";
+            this.comboTitle.Size = new System.Drawing.Size(96, 36);
+            this.comboTitle.TabIndex = 0;
+            // 
+            // textFname
+            // 
+            this.textFname.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textFname.Location = new System.Drawing.Point(375, 148);
+            this.textFname.Name = "textFname";
+            this.textFname.Size = new System.Drawing.Size(374, 35);
+            this.textFname.TabIndex = 1;
+            // 
+            // textLname
+            // 
+            this.textLname.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textLname.Location = new System.Drawing.Point(375, 211);
+            this.textLname.Name = "textLname";
+            this.textLname.Size = new System.Drawing.Size(374, 35);
+            this.textLname.TabIndex = 2;
+            // 
+            // textEmail
+            // 
+            this.textEmail.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textEmail.Location = new System.Drawing.Point(374, 337);
+            this.textEmail.Name = "textEmail";
+            this.textEmail.Size = new System.Drawing.Size(181, 35);
+            this.textEmail.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.LightGray;
+            this.label1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(272, 92);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 28);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Title name";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.LightGray;
+            this.label6.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(273, 155);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(95, 28);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "First name";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.LightGray;
+            this.label12.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(273, 218);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(95, 28);
+            this.label12.TabIndex = 2;
+            this.label12.Text = "Last name";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.LightGray;
+            this.label16.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(313, 344);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(55, 28);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "Email";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.LightGray;
+            this.label13.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(258, 281);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(110, 28);
+            this.label13.TabIndex = 2;
+            this.label13.Text = "Date of birth";
+            // 
+            // dateTimeDOB
+            // 
+            this.dateTimeDOB.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimeDOB.Location = new System.Drawing.Point(374, 274);
+            this.dateTimeDOB.Name = "dateTimeDOB";
+            this.dateTimeDOB.Size = new System.Drawing.Size(181, 35);
+            this.dateTimeDOB.TabIndex = 3;
+            // 
+            // panelFlight1
+            // 
+            this.panelFlight1.AutoScroll = true;
+            this.panelFlight1.BackColor = System.Drawing.Color.White;
+            this.panelFlight1.Controls.Add(this.dateTimeDOB);
+            this.panelFlight1.Controls.Add(this.label13);
+            this.panelFlight1.Controls.Add(this.label14);
+            this.panelFlight1.Controls.Add(this.label16);
+            this.panelFlight1.Controls.Add(this.label12);
+            this.panelFlight1.Controls.Add(this.label6);
+            this.panelFlight1.Controls.Add(this.label1);
+            this.panelFlight1.Controls.Add(this.textEmail);
+            this.panelFlight1.Controls.Add(this.textLname);
+            this.panelFlight1.Controls.Add(this.textFname);
+            this.panelFlight1.Controls.Add(this.comboEmail);
+            this.panelFlight1.Controls.Add(this.comboTitle);
+            this.panelFlight1.Controls.Add(this.label5);
+            this.panelFlight1.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelFlight1.Location = new System.Drawing.Point(-1, 132);
+            this.panelFlight1.Name = "panelFlight1";
+            this.panelFlight1.Size = new System.Drawing.Size(1058, 537);
+            this.panelFlight1.TabIndex = 4;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.DarkGray;
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(-5, 0);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(153, 68);
+            this.btnBack.TabIndex = 2;
+            this.btnBack.Text = "< BACK";
+            this.btnBack.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.LightGray;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label5.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(-5, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(1063, 470);
+            this.label5.TabIndex = 2;
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // comboEmail
+            // 
+            this.comboEmail.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboEmail.FormattingEnabled = true;
+            this.comboEmail.Items.AddRange(new object[] {
+            "gmail.com",
+            "hotmail.com",
+            "outlook.com",
+            "mail.com"});
+            this.comboEmail.Location = new System.Drawing.Point(599, 337);
+            this.comboEmail.Name = "comboEmail";
+            this.comboEmail.Size = new System.Drawing.Size(149, 36);
+            this.comboEmail.TabIndex = 5;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.LightGray;
+            this.label14.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(563, 344);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(28, 28);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "@";
             // 
             // formPassengerInfo
             // 
@@ -421,10 +504,10 @@ namespace POS_App {
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericPerson)).EndInit();
+            this.panelFlight1.ResumeLayout(false);
+            this.panelFlight1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -435,15 +518,9 @@ namespace POS_App {
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label labelTimeNow;
         private System.Windows.Forms.Label labelDateNow;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panelFlight1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.NumericUpDown numericPerson;
-        private System.Windows.Forms.Label btnSearch;
+        private System.Windows.Forms.Label btnSubmit;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label labelLname;
@@ -452,7 +529,6 @@ namespace POS_App {
         private System.Windows.Forms.Label btnLogout;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
@@ -460,5 +536,20 @@ namespace POS_App {
         private System.Windows.Forms.ComboBox comboTo;
         private System.Windows.Forms.ComboBox comboFrom;
         private System.Windows.Forms.Timer timerTimeNow;
+        private System.Windows.Forms.ComboBox comboTitle;
+        private System.Windows.Forms.TextBox textFname;
+        private System.Windows.Forms.TextBox textLname;
+        private System.Windows.Forms.TextBox textEmail;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DateTimePicker dateTimeDOB;
+        private System.Windows.Forms.Panel panelFlight1;
+        private System.Windows.Forms.Label btnBack;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox comboEmail;
+        private System.Windows.Forms.Label label14;
     }
 }
