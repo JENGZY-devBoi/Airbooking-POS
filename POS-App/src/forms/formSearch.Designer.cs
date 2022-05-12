@@ -24,10 +24,10 @@ namespace POS_App {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             this.comboTo = new System.Windows.Forms.ComboBox();
             this.comboFrom = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.numericPerson = new System.Windows.Forms.NumericUpDown();
             this.btnSearch = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -37,7 +37,6 @@ namespace POS_App {
             this.btnLogout = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -156,6 +155,7 @@ namespace POS_App {
             this.Departure5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
+            this.labelTimeNow = new System.Windows.Forms.Label();
             this.labelDateNow = new System.Windows.Forms.Label();
             this.labelDepart = new System.Windows.Forms.Label();
             this.labelArrival = new System.Windows.Forms.Label();
@@ -165,9 +165,8 @@ namespace POS_App {
             this.label50 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.labelTimeNow = new System.Windows.Forms.Label();
+            this.timerTimeNow = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericPerson)).BeginInit();
             this.panelFlight1.SuspendLayout();
             this.row10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
@@ -248,7 +247,6 @@ namespace POS_App {
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.numericPerson);
             this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
@@ -258,7 +256,6 @@ namespace POS_App {
             this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label7);
@@ -271,31 +268,12 @@ namespace POS_App {
             this.panel1.Size = new System.Drawing.Size(394, 670);
             this.panel1.TabIndex = 1;
             // 
-            // numericPerson
-            // 
-            this.numericPerson.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericPerson.Location = new System.Drawing.Point(41, 338);
-            this.numericPerson.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericPerson.Name = "numericPerson";
-            this.numericPerson.Size = new System.Drawing.Size(90, 31);
-            this.numericPerson.TabIndex = 5;
-            this.numericPerson.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericPerson.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(37, 411);
+            this.btnSearch.Location = new System.Drawing.Point(40, 335);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(313, 45);
             this.btnSearch.TabIndex = 4;
@@ -388,16 +366,6 @@ namespace POS_App {
             this.label3.TabIndex = 2;
             this.label3.Text = "From";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(36, 308);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 28);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Passenger";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -471,7 +439,7 @@ namespace POS_App {
             this.row10.Controls.Add(this.labelArrival10);
             this.row10.Controls.Add(this.label60);
             this.row10.Controls.Add(this.Departure10);
-            this.row10.Location = new System.Drawing.Point(16, 893);
+            this.row10.Location = new System.Drawing.Point(16, 895);
             this.row10.Name = "row10";
             this.row10.Size = new System.Drawing.Size(1009, 100);
             this.row10.TabIndex = 3;
@@ -515,8 +483,10 @@ namespace POS_App {
             this.btnSelect10.Name = "btnSelect10";
             this.btnSelect10.Size = new System.Drawing.Size(135, 100);
             this.btnSelect10.TabIndex = 2;
+            this.btnSelect10.Tag = "10";
             this.btnSelect10.Text = "select";
             this.btnSelect10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSelect10.Click += new System.EventHandler(this.btnSelect10_Click);
             // 
             // labelPrice10
             // 
@@ -597,7 +567,7 @@ namespace POS_App {
             this.row8.Controls.Add(this.labelArrival8);
             this.row8.Controls.Add(this.label58);
             this.row8.Controls.Add(this.Departure8);
-            this.row8.Location = new System.Drawing.Point(16, 695);
+            this.row8.Location = new System.Drawing.Point(16, 697);
             this.row8.Name = "row8";
             this.row8.Size = new System.Drawing.Size(1009, 100);
             this.row8.TabIndex = 3;
@@ -641,8 +611,10 @@ namespace POS_App {
             this.btnSelect8.Name = "btnSelect8";
             this.btnSelect8.Size = new System.Drawing.Size(135, 100);
             this.btnSelect8.TabIndex = 2;
+            this.btnSelect8.Tag = "8";
             this.btnSelect8.Text = "select";
             this.btnSelect8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSelect8.Click += new System.EventHandler(this.btnSelect8_Click);
             // 
             // labelPrice8
             // 
@@ -723,7 +695,7 @@ namespace POS_App {
             this.row9.Controls.Add(this.labelArrival9);
             this.row9.Controls.Add(this.label59);
             this.row9.Controls.Add(this.Departure9);
-            this.row9.Location = new System.Drawing.Point(16, 794);
+            this.row9.Location = new System.Drawing.Point(16, 796);
             this.row9.Name = "row9";
             this.row9.Size = new System.Drawing.Size(1009, 100);
             this.row9.TabIndex = 3;
@@ -767,8 +739,10 @@ namespace POS_App {
             this.btnSelect9.Name = "btnSelect9";
             this.btnSelect9.Size = new System.Drawing.Size(135, 100);
             this.btnSelect9.TabIndex = 2;
+            this.btnSelect9.Tag = "9";
             this.btnSelect9.Text = "select";
             this.btnSelect9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSelect9.Click += new System.EventHandler(this.btnSelect9_Click);
             // 
             // labelPrice9
             // 
@@ -849,7 +823,7 @@ namespace POS_App {
             this.row7.Controls.Add(this.labelArrival7);
             this.row7.Controls.Add(this.label57);
             this.row7.Controls.Add(this.Departure7);
-            this.row7.Location = new System.Drawing.Point(16, 596);
+            this.row7.Location = new System.Drawing.Point(16, 598);
             this.row7.Name = "row7";
             this.row7.Size = new System.Drawing.Size(1009, 100);
             this.row7.TabIndex = 3;
@@ -893,8 +867,10 @@ namespace POS_App {
             this.btnSelect7.Name = "btnSelect7";
             this.btnSelect7.Size = new System.Drawing.Size(135, 100);
             this.btnSelect7.TabIndex = 2;
+            this.btnSelect7.Tag = "7";
             this.btnSelect7.Text = "select";
             this.btnSelect7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSelect7.Click += new System.EventHandler(this.btnSelect7_Click);
             // 
             // labelPrice7
             // 
@@ -975,7 +951,7 @@ namespace POS_App {
             this.row6.Controls.Add(this.labelArrival6);
             this.row6.Controls.Add(this.label56);
             this.row6.Controls.Add(this.Departure6);
-            this.row6.Location = new System.Drawing.Point(16, 499);
+            this.row6.Location = new System.Drawing.Point(16, 501);
             this.row6.Name = "row6";
             this.row6.Size = new System.Drawing.Size(1009, 100);
             this.row6.TabIndex = 3;
@@ -1019,8 +995,10 @@ namespace POS_App {
             this.btnSelect6.Name = "btnSelect6";
             this.btnSelect6.Size = new System.Drawing.Size(135, 100);
             this.btnSelect6.TabIndex = 2;
+            this.btnSelect6.Tag = "6";
             this.btnSelect6.Text = "select";
             this.btnSelect6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSelect6.Click += new System.EventHandler(this.btnSelect6_Click);
             // 
             // labelPrice6
             // 
@@ -1101,7 +1079,7 @@ namespace POS_App {
             this.row4.Controls.Add(this.labelArrival4);
             this.row4.Controls.Add(this.label54);
             this.row4.Controls.Add(this.Departure4);
-            this.row4.Location = new System.Drawing.Point(16, 300);
+            this.row4.Location = new System.Drawing.Point(16, 302);
             this.row4.Name = "row4";
             this.row4.Size = new System.Drawing.Size(1009, 100);
             this.row4.TabIndex = 3;
@@ -1145,8 +1123,10 @@ namespace POS_App {
             this.btnSelect4.Name = "btnSelect4";
             this.btnSelect4.Size = new System.Drawing.Size(135, 100);
             this.btnSelect4.TabIndex = 2;
+            this.btnSelect4.Tag = "4";
             this.btnSelect4.Text = "select";
             this.btnSelect4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSelect4.Click += new System.EventHandler(this.btnSelect4_Click);
             // 
             // labelPrice4
             // 
@@ -1227,7 +1207,7 @@ namespace POS_App {
             this.row3.Controls.Add(this.labelArrival3);
             this.row3.Controls.Add(this.label53);
             this.row3.Controls.Add(this.Departure3);
-            this.row3.Location = new System.Drawing.Point(16, 200);
+            this.row3.Location = new System.Drawing.Point(16, 202);
             this.row3.Name = "row3";
             this.row3.Size = new System.Drawing.Size(1009, 100);
             this.row3.TabIndex = 3;
@@ -1271,8 +1251,10 @@ namespace POS_App {
             this.btnSelect3.Name = "btnSelect3";
             this.btnSelect3.Size = new System.Drawing.Size(135, 100);
             this.btnSelect3.TabIndex = 2;
+            this.btnSelect3.Tag = "3";
             this.btnSelect3.Text = "select";
             this.btnSelect3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSelect3.Click += new System.EventHandler(this.btnSelect3_Click);
             // 
             // labelPrice3
             // 
@@ -1353,7 +1335,7 @@ namespace POS_App {
             this.row2.Controls.Add(this.labelArrival2);
             this.row2.Controls.Add(this.label52);
             this.row2.Controls.Add(this.Departure2);
-            this.row2.Location = new System.Drawing.Point(16, 100);
+            this.row2.Location = new System.Drawing.Point(16, 102);
             this.row2.Name = "row2";
             this.row2.Size = new System.Drawing.Size(1009, 100);
             this.row2.TabIndex = 3;
@@ -1397,8 +1379,10 @@ namespace POS_App {
             this.btnSelect2.Name = "btnSelect2";
             this.btnSelect2.Size = new System.Drawing.Size(135, 100);
             this.btnSelect2.TabIndex = 2;
+            this.btnSelect2.Tag = "2";
             this.btnSelect2.Text = "select";
             this.btnSelect2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSelect2.Click += new System.EventHandler(this.btnSelect2_Click);
             // 
             // labelPrice2
             // 
@@ -1480,7 +1464,7 @@ namespace POS_App {
             this.row1.Controls.Add(this.labelArrival1);
             this.row1.Controls.Add(this.label51);
             this.row1.Controls.Add(this.Departure1);
-            this.row1.Location = new System.Drawing.Point(16, 0);
+            this.row1.Location = new System.Drawing.Point(16, 2);
             this.row1.Name = "row1";
             this.row1.Size = new System.Drawing.Size(1009, 100);
             this.row1.TabIndex = 3;
@@ -1534,8 +1518,10 @@ namespace POS_App {
             this.btnSelect1.Name = "btnSelect1";
             this.btnSelect1.Size = new System.Drawing.Size(135, 100);
             this.btnSelect1.TabIndex = 2;
+            this.btnSelect1.Tag = "1";
             this.btnSelect1.Text = "select";
             this.btnSelect1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSelect1.Click += new System.EventHandler(this.btnSelect1_Click);
             // 
             // labelPrice1
             // 
@@ -1616,7 +1602,7 @@ namespace POS_App {
             this.row5.Controls.Add(this.labelArrival5);
             this.row5.Controls.Add(this.label55);
             this.row5.Controls.Add(this.Departure5);
-            this.row5.Location = new System.Drawing.Point(16, 400);
+            this.row5.Location = new System.Drawing.Point(16, 402);
             this.row5.Name = "row5";
             this.row5.Size = new System.Drawing.Size(1009, 100);
             this.row5.TabIndex = 3;
@@ -1660,8 +1646,10 @@ namespace POS_App {
             this.btnSelect5.Name = "btnSelect5";
             this.btnSelect5.Size = new System.Drawing.Size(135, 100);
             this.btnSelect5.TabIndex = 2;
+            this.btnSelect5.Tag = "5";
             this.btnSelect5.Text = "select";
             this.btnSelect5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSelect5.Click += new System.EventHandler(this.btnSelect5_Click);
             // 
             // labelPrice5
             // 
@@ -1749,15 +1737,26 @@ namespace POS_App {
             this.label11.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(35, 16);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(79, 36);
+            this.label11.Size = new System.Drawing.Size(134, 36);
             this.label11.TabIndex = 2;
-            this.label11.Text = "Flights";
+            this.label11.Text = "Select Flight";
+            // 
+            // labelTimeNow
+            // 
+            this.labelTimeNow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.labelTimeNow.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTimeNow.Location = new System.Drawing.Point(888, 34);
+            this.labelTimeNow.Name = "labelTimeNow";
+            this.labelTimeNow.Size = new System.Drawing.Size(136, 30);
+            this.labelTimeNow.TabIndex = 2;
+            this.labelTimeNow.Text = "TimeNow";
+            this.labelTimeNow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelDateNow
             // 
             this.labelDateNow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.labelDateNow.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDateNow.Location = new System.Drawing.Point(888, 36);
+            this.labelDateNow.Location = new System.Drawing.Point(888, 6);
             this.labelDateNow.Name = "labelDateNow";
             this.labelDateNow.Size = new System.Drawing.Size(136, 28);
             this.labelDateNow.TabIndex = 2;
@@ -1858,16 +1857,10 @@ namespace POS_App {
             this.label15.TabIndex = 2;
             this.label15.Text = "Price";
             // 
-            // labelTimeNow
+            // timerTimeNow
             // 
-            this.labelTimeNow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.labelTimeNow.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTimeNow.Location = new System.Drawing.Point(888, 6);
-            this.labelTimeNow.Name = "labelTimeNow";
-            this.labelTimeNow.Size = new System.Drawing.Size(136, 30);
-            this.labelTimeNow.TabIndex = 2;
-            this.labelTimeNow.Text = "TimeNow";
-            this.labelTimeNow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.timerTimeNow.Enabled = true;
+            this.timerTimeNow.Tick += new System.EventHandler(this.timerTimeNow_Tick);
             // 
             // formSearch
             // 
@@ -1885,7 +1878,6 @@ namespace POS_App {
             this.Load += new System.EventHandler(this.formSearch_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericPerson)).EndInit();
             this.panelFlight1.ResumeLayout(false);
             this.row10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
@@ -1941,7 +1933,6 @@ namespace POS_App {
         private System.Windows.Forms.ComboBox comboTo;
         private System.Windows.Forms.ComboBox comboFrom;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
@@ -2077,8 +2068,8 @@ namespace POS_App {
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.NumericUpDown numericPerson;
         private System.Windows.Forms.ComboBox comboDepart;
         private System.Windows.Forms.Label labelTimeNow;
+        private System.Windows.Forms.Timer timerTimeNow;
     }
 }
