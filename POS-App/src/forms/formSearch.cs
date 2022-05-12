@@ -143,6 +143,7 @@ namespace POS_App {
 
                 int idx = 0;
                 foreach (var itm in flightDR) {
+                    arrPanel[idx].Visible = true;
 
                     string fID = itm["flightID"].ToString();
                     string fExitTime = itm["flightExitTime"].ToString();
@@ -311,8 +312,10 @@ namespace POS_App {
             // passenger number
             passengerData.passengerNum = Convert.ToInt32(numericPerson.Value);
 
-            // go to passengerInfo
-
+            // GO TO passengerInfo form
+            var passengerForm = new formPassengerInfo();
+            passengerForm.Show();
+            this.Hide();
         }
 
         private void timerTimeNow_Tick(object sender, EventArgs e) {
