@@ -30,6 +30,7 @@ namespace POS_App {
             this.labelTimeNow = new System.Windows.Forms.Label();
             this.labelDateNow = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSubmit = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -58,10 +59,9 @@ namespace POS_App {
             this.label13 = new System.Windows.Forms.Label();
             this.dateTimeDOB = new System.Windows.Forms.DateTimePicker();
             this.panelFlight1 = new System.Windows.Forms.Panel();
-            this.btnBack = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboEmail = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.comboEmail = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -124,6 +124,19 @@ namespace POS_App {
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1058, 68);
             this.panel8.TabIndex = 3;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.DarkGray;
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(-5, 0);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(153, 68);
+            this.btnBack.TabIndex = 2;
+            this.btnBack.Text = "< BACK";
+            this.btnBack.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // panel1
             // 
@@ -355,7 +368,7 @@ namespace POS_App {
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.LightGray;
+            this.label1.BackColor = System.Drawing.Color.LavenderBlush;
             this.label1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(272, 92);
             this.label1.Name = "label1";
@@ -366,7 +379,7 @@ namespace POS_App {
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.LightGray;
+            this.label6.BackColor = System.Drawing.Color.LavenderBlush;
             this.label6.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(273, 155);
             this.label6.Name = "label6";
@@ -377,7 +390,7 @@ namespace POS_App {
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.LightGray;
+            this.label12.BackColor = System.Drawing.Color.LavenderBlush;
             this.label12.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(273, 218);
             this.label12.Name = "label12";
@@ -388,7 +401,7 @@ namespace POS_App {
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.LightGray;
+            this.label16.BackColor = System.Drawing.Color.LavenderBlush;
             this.label16.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(313, 344);
             this.label16.Name = "label16";
@@ -399,7 +412,7 @@ namespace POS_App {
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.LightGray;
+            this.label13.BackColor = System.Drawing.Color.LavenderBlush;
             this.label13.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(258, 281);
             this.label13.Name = "label13";
@@ -438,29 +451,16 @@ namespace POS_App {
             this.panelFlight1.Size = new System.Drawing.Size(1058, 537);
             this.panelFlight1.TabIndex = 4;
             // 
-            // btnBack
+            // label14
             // 
-            this.btnBack.BackColor = System.Drawing.Color.DarkGray;
-            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(-5, 0);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(153, 68);
-            this.btnBack.TabIndex = 2;
-            this.btnBack.Text = "< BACK";
-            this.btnBack.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.LightGray;
-            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label5.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(-5, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(1063, 470);
-            this.label5.TabIndex = 2;
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.LavenderBlush;
+            this.label14.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(563, 344);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(28, 28);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "@";
             // 
             // comboEmail
             // 
@@ -476,16 +476,16 @@ namespace POS_App {
             this.comboEmail.Size = new System.Drawing.Size(149, 36);
             this.comboEmail.TabIndex = 5;
             // 
-            // label14
+            // label5
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.LightGray;
-            this.label14.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(563, 344);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(28, 28);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "@";
+            this.label5.BackColor = System.Drawing.Color.LavenderBlush;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label5.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(-5, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(1063, 470);
+            this.label5.TabIndex = 2;
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // formPassengerInfo
             // 
