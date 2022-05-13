@@ -16,7 +16,8 @@ namespace POS_App {
 
         private void formSelectSeat_Load(object sender, EventArgs e) {
             init();
-
+            Label[] arrSeat = { seatA1,seatA2,seatA3,seatA4,seatA5,seatA6,seatA7,seatA8,seatA9,seatA10,seatB1,
+            seatB2,seatB3,seatB4,seatB5,seatB6,seatB7,seatB8,seatB9,seatB10,seatC1,seatC2,seatC3,seatC4,seatC5,seatC6,seatC7,seatC8,seatC9,seatC10 };
             // Timer Now
             timerTimeNow.Start();
             labelDateNow.Text = DateTime.Now.ToString("MM/dd/yyyy");
