@@ -37,6 +37,10 @@ namespace POS_App {
             comboFrom.SelectedIndex = 0;
             comboTo.SelectedIndex = 0;
             comboDepart.SelectedIndex = 0;
+
+            // Set array to btnCliked
+            btnClicked = new bool[40];
+            for (int i = 0; i < 40; i++) btnClicked[i] = false;
         }
 
         private void btnBack_Click(object sender, EventArgs e) {
@@ -60,24 +64,36 @@ namespace POS_App {
             timerTimeNow.Start();
         }
 
+        //---------------------------------------------------------------
+        //---------------------------------------------------------------
         #region Fields ButtonWasClicked
-        bool sA1 = false;
+        bool[] btnClicked;
         #endregion
 
         private void seatA1_Click(object sender, EventArgs e) {
-            sA1 = checkClicked(sA1);
-
             int idx = convertIdxSeat(seatA1.Tag.ToString());
-            if (sA1) {
-                //  TEST
-                selectedColor(seatA1);
+
+            btnClicked[idx] = checkClicked(btnClicked[idx]);
+            selectedClick(seatA1, btnClicked[idx]);
+        }
+
+        private void seatA2_Click(object sender, EventArgs e) {
+            int idx = convertIdxSeat(seatA2.Tag.ToString());
+
+            btnClicked[idx] = checkClicked(btnClicked[idx]);
+            selectedClick(seatA2, btnClicked[idx]);
+        }
+
+        private void selectedClick(Label lbl, bool click) {
+            if (click) {
+                selectedColor(lbl);
             } else {
-                unselectedColor(seatA1);
+                unselectedColor(lbl);
             }
         }
 
         private bool checkClicked(bool click) {
-            if (click) return false;         
+            if (click) return false;
             return true;
         }
 
@@ -93,5 +109,6 @@ namespace POS_App {
         private void unselectedColor(Label lbl) {
             lbl.BackColor = Color.FromArgb(192, 192, 255);
         }
+
     }
 }

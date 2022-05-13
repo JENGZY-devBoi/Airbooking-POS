@@ -614,6 +614,7 @@ namespace POS_App {
             this.seatA2.Size = new System.Drawing.Size(60, 60);
             this.seatA2.TabIndex = 2;
             this.seatA2.Tag = "A 2";
+            this.seatA2.Click += new System.EventHandler(this.seatA2_Click);
             // 
             // seatB2
             // 
