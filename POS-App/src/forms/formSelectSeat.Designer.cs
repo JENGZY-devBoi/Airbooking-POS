@@ -337,7 +337,8 @@ namespace POS_App {
             this.seatD10.Name = "seatD10";
             this.seatD10.Size = new System.Drawing.Size(60, 60);
             this.seatD10.TabIndex = 2;
-            this.seatD10.Tag = "D 10";
+            this.seatD10.Tag = "D 40";
+            this.seatD10.Click += new System.EventHandler(this.seatD10_Click);
             // 
             // seatD9
             // 
@@ -348,7 +349,8 @@ namespace POS_App {
             this.seatD9.Name = "seatD9";
             this.seatD9.Size = new System.Drawing.Size(60, 60);
             this.seatD9.TabIndex = 2;
-            this.seatD9.Tag = "D 9";
+            this.seatD9.Tag = "D 39";
+            this.seatD9.Click += new System.EventHandler(this.seatD9_Click);
             // 
             // seatD8
             // 
@@ -359,7 +361,8 @@ namespace POS_App {
             this.seatD8.Name = "seatD8";
             this.seatD8.Size = new System.Drawing.Size(60, 60);
             this.seatD8.TabIndex = 2;
-            this.seatD8.Tag = "D 8";
+            this.seatD8.Tag = "D 38";
+            this.seatD8.Click += new System.EventHandler(this.seatD8_Click);
             // 
             // seatD7
             // 
@@ -370,7 +373,8 @@ namespace POS_App {
             this.seatD7.Name = "seatD7";
             this.seatD7.Size = new System.Drawing.Size(60, 60);
             this.seatD7.TabIndex = 2;
-            this.seatD7.Tag = "D 7";
+            this.seatD7.Tag = "D 37";
+            this.seatD7.Click += new System.EventHandler(this.seatD7_Click);
             // 
             // seatD6
             // 
@@ -381,7 +385,8 @@ namespace POS_App {
             this.seatD6.Name = "seatD6";
             this.seatD6.Size = new System.Drawing.Size(60, 60);
             this.seatD6.TabIndex = 2;
-            this.seatD6.Tag = "D 6";
+            this.seatD6.Tag = "D 36";
+            this.seatD6.Click += new System.EventHandler(this.seatD6_Click);
             // 
             // seatD5
             // 
@@ -392,7 +397,8 @@ namespace POS_App {
             this.seatD5.Name = "seatD5";
             this.seatD5.Size = new System.Drawing.Size(60, 60);
             this.seatD5.TabIndex = 2;
-            this.seatD5.Tag = "D 5";
+            this.seatD5.Tag = "D 35";
+            this.seatD5.Click += new System.EventHandler(this.seatD5_Click);
             // 
             // seatD4
             // 
@@ -403,7 +409,8 @@ namespace POS_App {
             this.seatD4.Name = "seatD4";
             this.seatD4.Size = new System.Drawing.Size(60, 60);
             this.seatD4.TabIndex = 2;
-            this.seatD4.Tag = "D 4";
+            this.seatD4.Tag = "D 34";
+            this.seatD4.Click += new System.EventHandler(this.seatD4_Click);
             // 
             // seatD3
             // 
@@ -414,7 +421,8 @@ namespace POS_App {
             this.seatD3.Name = "seatD3";
             this.seatD3.Size = new System.Drawing.Size(60, 60);
             this.seatD3.TabIndex = 2;
-            this.seatD3.Tag = "D 3";
+            this.seatD3.Tag = "D 33";
+            this.seatD3.Click += new System.EventHandler(this.seatD3_Click);
             // 
             // seatC10
             // 
@@ -425,7 +433,8 @@ namespace POS_App {
             this.seatC10.Name = "seatC10";
             this.seatC10.Size = new System.Drawing.Size(60, 60);
             this.seatC10.TabIndex = 2;
-            this.seatC10.Tag = "C 10";
+            this.seatC10.Tag = "C 30";
+            this.seatC10.Click += new System.EventHandler(this.seatC10_Click);
             // 
             // seatC9
             // 
@@ -436,7 +445,8 @@ namespace POS_App {
             this.seatC9.Name = "seatC9";
             this.seatC9.Size = new System.Drawing.Size(60, 60);
             this.seatC9.TabIndex = 2;
-            this.seatC9.Tag = "C 9";
+            this.seatC9.Tag = "C 29";
+            this.seatC9.Click += new System.EventHandler(this.seatC9_Click);
             // 
             // seatC8
             // 
@@ -447,7 +457,8 @@ namespace POS_App {
             this.seatC8.Name = "seatC8";
             this.seatC8.Size = new System.Drawing.Size(60, 60);
             this.seatC8.TabIndex = 2;
-            this.seatC8.Tag = "C 8";
+            this.seatC8.Tag = "C 28";
+            this.seatC8.Click += new System.EventHandler(this.seatC8_Click);
             // 
             // seatB10
             // 
@@ -458,7 +469,8 @@ namespace POS_App {
             this.seatB10.Name = "seatB10";
             this.seatB10.Size = new System.Drawing.Size(60, 60);
             this.seatB10.TabIndex = 2;
-            this.seatB10.Tag = "B 10";
+            this.seatB10.Tag = "B 20";
+            this.seatB10.Click += new System.EventHandler(this.seatB10_Click);
             // 
             // seatD2
             // 
@@ -469,7 +481,8 @@ namespace POS_App {
             this.seatD2.Name = "seatD2";
             this.seatD2.Size = new System.Drawing.Size(60, 60);
             this.seatD2.TabIndex = 2;
-            this.seatD2.Tag = "D 2";
+            this.seatD2.Tag = "D 32";
+            this.seatD2.Click += new System.EventHandler(this.seatD2_Click);
             // 
             // seatB9
             // 
@@ -480,7 +493,8 @@ namespace POS_App {
             this.seatB9.Name = "seatB9";
             this.seatB9.Size = new System.Drawing.Size(60, 60);
             this.seatB9.TabIndex = 2;
-            this.seatB9.Tag = "B 9";
+            this.seatB9.Tag = "B 19";
+            this.seatB9.Click += new System.EventHandler(this.seatB9_Click);
             // 
             // seatC7
             // 
@@ -491,7 +505,8 @@ namespace POS_App {
             this.seatC7.Name = "seatC7";
             this.seatC7.Size = new System.Drawing.Size(60, 60);
             this.seatC7.TabIndex = 2;
-            this.seatC7.Tag = "C 7";
+            this.seatC7.Tag = "C 27";
+            this.seatC7.Click += new System.EventHandler(this.seatC7_Click);
             // 
             // seatB8
             // 
@@ -502,7 +517,8 @@ namespace POS_App {
             this.seatB8.Name = "seatB8";
             this.seatB8.Size = new System.Drawing.Size(60, 60);
             this.seatB8.TabIndex = 2;
-            this.seatB8.Tag = "B 8";
+            this.seatB8.Tag = "B 18";
+            this.seatB8.Click += new System.EventHandler(this.seatB8_Click);
             // 
             // seatD1
             // 
@@ -513,7 +529,8 @@ namespace POS_App {
             this.seatD1.Name = "seatD1";
             this.seatD1.Size = new System.Drawing.Size(60, 60);
             this.seatD1.TabIndex = 2;
-            this.seatD1.Tag = "D 1";
+            this.seatD1.Tag = "D 31";
+            this.seatD1.Click += new System.EventHandler(this.seatD1_Click);
             // 
             // seatB7
             // 
@@ -524,7 +541,8 @@ namespace POS_App {
             this.seatB7.Name = "seatB7";
             this.seatB7.Size = new System.Drawing.Size(60, 60);
             this.seatB7.TabIndex = 2;
-            this.seatB7.Tag = "B 7";
+            this.seatB7.Tag = "B 17";
+            this.seatB7.Click += new System.EventHandler(this.seatB7_Click);
             // 
             // seatC6
             // 
@@ -535,7 +553,8 @@ namespace POS_App {
             this.seatC6.Name = "seatC6";
             this.seatC6.Size = new System.Drawing.Size(60, 60);
             this.seatC6.TabIndex = 2;
-            this.seatC6.Tag = "C 6";
+            this.seatC6.Tag = "C 26";
+            this.seatC6.Click += new System.EventHandler(this.seatC6_Click);
             // 
             // seatB6
             // 
@@ -546,7 +565,8 @@ namespace POS_App {
             this.seatB6.Name = "seatB6";
             this.seatB6.Size = new System.Drawing.Size(60, 60);
             this.seatB6.TabIndex = 2;
-            this.seatB6.Tag = "B 6";
+            this.seatB6.Tag = "B 16";
+            this.seatB6.Click += new System.EventHandler(this.seatB6_Click);
             // 
             // seatC5
             // 
@@ -557,7 +577,8 @@ namespace POS_App {
             this.seatC5.Name = "seatC5";
             this.seatC5.Size = new System.Drawing.Size(60, 60);
             this.seatC5.TabIndex = 2;
-            this.seatC5.Tag = "C 5";
+            this.seatC5.Tag = "C 25";
+            this.seatC5.Click += new System.EventHandler(this.seatC5_Click);
             // 
             // seatA10
             // 
@@ -580,7 +601,8 @@ namespace POS_App {
             this.seatB5.Name = "seatB5";
             this.seatB5.Size = new System.Drawing.Size(60, 60);
             this.seatB5.TabIndex = 2;
-            this.seatB5.Tag = "B 5";
+            this.seatB5.Tag = "B 15";
+            this.seatB5.Click += new System.EventHandler(this.seatB5_Click);
             // 
             // seatA9
             // 
@@ -603,7 +625,8 @@ namespace POS_App {
             this.seatC4.Name = "seatC4";
             this.seatC4.Size = new System.Drawing.Size(60, 60);
             this.seatC4.TabIndex = 2;
-            this.seatC4.Tag = "C 4";
+            this.seatC4.Tag = "C 24";
+            this.seatC4.Click += new System.EventHandler(this.seatC4_Click);
             // 
             // seatA8
             // 
@@ -626,7 +649,8 @@ namespace POS_App {
             this.seatB4.Name = "seatB4";
             this.seatB4.Size = new System.Drawing.Size(60, 60);
             this.seatB4.TabIndex = 2;
-            this.seatB4.Tag = "B 4";
+            this.seatB4.Tag = "B 14";
+            this.seatB4.Click += new System.EventHandler(this.seatB4_Click);
             // 
             // seatA7
             // 
@@ -649,7 +673,8 @@ namespace POS_App {
             this.seatC3.Name = "seatC3";
             this.seatC3.Size = new System.Drawing.Size(60, 60);
             this.seatC3.TabIndex = 2;
-            this.seatC3.Tag = "C 3";
+            this.seatC3.Tag = "C 23";
+            this.seatC3.Click += new System.EventHandler(this.seatC3_Click);
             // 
             // seatA6
             // 
@@ -672,7 +697,8 @@ namespace POS_App {
             this.seatB3.Name = "seatB3";
             this.seatB3.Size = new System.Drawing.Size(60, 60);
             this.seatB3.TabIndex = 2;
-            this.seatB3.Tag = "B 3";
+            this.seatB3.Tag = "B 13";
+            this.seatB3.Click += new System.EventHandler(this.seatB3_Click);
             // 
             // seatA5
             // 
@@ -695,7 +721,8 @@ namespace POS_App {
             this.seatC2.Name = "seatC2";
             this.seatC2.Size = new System.Drawing.Size(60, 60);
             this.seatC2.TabIndex = 2;
-            this.seatC2.Tag = "C 2";
+            this.seatC2.Tag = "C 22";
+            this.seatC2.Click += new System.EventHandler(this.seatC2_Click);
             // 
             // seatA4
             // 
@@ -718,7 +745,8 @@ namespace POS_App {
             this.seatB2.Name = "seatB2";
             this.seatB2.Size = new System.Drawing.Size(60, 60);
             this.seatB2.TabIndex = 2;
-            this.seatB2.Tag = "B 2";
+            this.seatB2.Tag = "B 12";
+            this.seatB2.Click += new System.EventHandler(this.seatB2_Click);
             // 
             // seatA3
             // 
@@ -741,7 +769,8 @@ namespace POS_App {
             this.seatC1.Name = "seatC1";
             this.seatC1.Size = new System.Drawing.Size(60, 60);
             this.seatC1.TabIndex = 2;
-            this.seatC1.Tag = "C 1";
+            this.seatC1.Tag = "C 21";
+            this.seatC1.Click += new System.EventHandler(this.seatC1_Click);
             // 
             // seatA2
             // 
@@ -764,7 +793,8 @@ namespace POS_App {
             this.seatB1.Name = "seatB1";
             this.seatB1.Size = new System.Drawing.Size(60, 60);
             this.seatB1.TabIndex = 2;
-            this.seatB1.Tag = "B 1";
+            this.seatB1.Tag = "B 11";
+            this.seatB1.Click += new System.EventHandler(this.seatB1_Click);
             // 
             // seatA1
             // 

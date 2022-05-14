@@ -13,6 +13,9 @@ namespace POS_App {
     public partial class formSelectSeat : Form {
         #region Fields
         private List<Label> lsSeat = new List<Label>();
+        private List<string> lsSeatID = new List<string>();
+        private bool[] btnClicked;
+        private string id;
         #endregion
 
         public formSelectSeat() {
@@ -105,6 +108,7 @@ namespace POS_App {
                         bookedSeatColor(lsSeat[idx]);
                         lsSeat[idx].Enabled = false;
                     }
+                    lsSeatID.Add(itm["seatID"].ToString());
                     idx++;
                 }
             } catch (Exception ex) {
@@ -115,13 +119,6 @@ namespace POS_App {
             dbConfig.connection.Close();
             return true;
         }
-
-        //---------------------------------------------------------------
-        //---------------------------------------------------------------
-        #region Fields ButtonWasClicked
-        bool[] btnClicked;
-        #endregion
-
 
         private void selectedClick(Label lbl, bool click, int idx) {
             if (click) {
@@ -148,6 +145,9 @@ namespace POS_App {
 
         private int convertIdxSeat(string str) {
             int idx = Convert.ToInt32(str.Split(' ')[1]) - 1;
+            id = lsSeatID[idx];
+            Console.WriteLine(id);
+
             return idx;
         }
 
@@ -208,6 +208,128 @@ namespace POS_App {
 
         private void seatA10_Click(object sender, EventArgs e) {
             detectCliked(seatA10);
+        }
+
+        private void seatB1_Click(object sender, EventArgs e) {
+            detectCliked(seatB1);
+        }
+
+        private void seatB2_Click(object sender, EventArgs e) {
+            detectCliked(seatB2);
+
+        }
+
+        private void seatB3_Click(object sender, EventArgs e) {
+            detectCliked(seatB3);
+
+        }
+
+        private void seatB4_Click(object sender, EventArgs e) {
+            detectCliked(seatB4);
+        }
+
+        private void seatB5_Click(object sender, EventArgs e) {
+            detectCliked(seatB5);
+        }
+
+        private void seatB6_Click(object sender, EventArgs e) {
+            detectCliked(seatB6);
+        }
+
+        private void seatB7_Click(object sender, EventArgs e) {
+            detectCliked(seatB7);
+        }
+
+        private void seatB8_Click(object sender, EventArgs e) {
+            detectCliked(seatB8);
+        }
+
+        private void seatB9_Click(object sender, EventArgs e) {
+            detectCliked(seatB9);
+        }
+
+        private void seatB10_Click(object sender, EventArgs e) {
+            detectCliked(seatB10);
+        }
+
+        private void seatC1_Click(object sender, EventArgs e) {
+            detectCliked(seatC1);
+        }
+
+        private void seatC2_Click(object sender, EventArgs e) {
+            detectCliked(seatC2);
+        }
+
+        private void seatC3_Click(object sender, EventArgs e) {
+            detectCliked(seatC3);
+        }
+
+        private void seatC4_Click(object sender, EventArgs e) {
+            detectCliked(seatC4);
+        }
+
+        private void seatC5_Click(object sender, EventArgs e) {
+            detectCliked(seatC5);
+        }
+
+        private void seatC6_Click(object sender, EventArgs e) {
+            detectCliked(seatC6);
+        }
+
+        private void seatC7_Click(object sender, EventArgs e) {
+            detectCliked(seatC7);
+        }
+
+        private void seatC8_Click(object sender, EventArgs e) {
+            detectCliked(seatC8);
+        }
+
+        private void seatC9_Click(object sender, EventArgs e) {
+            detectCliked(seatC9);
+        }
+
+        private void seatC10_Click(object sender, EventArgs e) {
+            detectCliked(seatC10);
+        }
+
+        private void seatD1_Click(object sender, EventArgs e) {
+            detectCliked(seatD1);
+        }
+
+        private void seatD2_Click(object sender, EventArgs e) {
+            detectCliked(seatD2);
+        }
+
+        private void seatD3_Click(object sender, EventArgs e) {
+            detectCliked(seatD3);
+        }
+
+        private void seatD4_Click(object sender, EventArgs e) {
+            detectCliked(seatD4);
+        }
+
+        private void seatD5_Click(object sender, EventArgs e) {
+            detectCliked(seatD5);
+        }
+
+        private void seatD6_Click(object sender, EventArgs e) {
+            detectCliked(seatD6);
+        }
+
+        private void seatD7_Click(object sender, EventArgs e) {
+            detectCliked(seatD7);
+        }
+
+        private void seatD8_Click(object sender, EventArgs e) {
+            detectCliked(seatD8);
+        }
+
+        private void seatD9_Click(object sender, EventArgs e) {
+            detectCliked(seatD9);
+        }
+
+        private void seatD10_Click(object sender, EventArgs e) {
+            detectCliked(seatD10);
         }
     }
 }
