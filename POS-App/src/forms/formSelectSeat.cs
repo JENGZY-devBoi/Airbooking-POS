@@ -93,7 +93,8 @@ namespace POS_App {
             seatAdapter.SelectCommand = dbOperation.commandSelect;
             seatAdapter.Fill(seatTable);
 
-            sql = $"flightID='{flightData.flightID}'";
+            sql = 
+                $"flightID='{flightData.flightID}'";
             try {
                 DataRow[] seatDR = seatTable.Select(sql);
 
@@ -102,12 +103,14 @@ namespace POS_App {
                     Console.WriteLine(itm["seatStatus"].ToString());
                     if (itm["seatStatus"].ToString() == "reserve") {
                         bookedSeatColor(lsSeat[idx]);
+                        lsSeat[idx].Enabled = false;
                     }
                     idx++;
                 }
             } catch (Exception ex) {
-
-            }            
+                Console.WriteLine(ex.Message);
+                dbConfig.connection.Close();
+            }
 
             dbConfig.connection.Close();
             return true;
@@ -119,25 +122,22 @@ namespace POS_App {
         bool[] btnClicked;
         #endregion
 
-        private void seatA1_Click(object sender, EventArgs e) {
-            int idx = convertIdxSeat(seatA1.Tag.ToString());
 
-            btnClicked[idx] = checkClicked(btnClicked[idx]);
-            selectedClick(seatA1, btnClicked[idx]);
-        }
-
-        private void seatA2_Click(object sender, EventArgs e) {
-            int idx = convertIdxSeat(seatA2.Tag.ToString());
-
-            btnClicked[idx] = checkClicked(btnClicked[idx]);
-            selectedClick(seatA2, btnClicked[idx]);
-        }
-
-        private void selectedClick(Label lbl, bool click) {
+        private void selectedClick(Label lbl, bool click, int idx) {
             if (click) {
+                defaultAllSeat(idx);
                 selectedColor(lbl);
             } else {
                 unselectedColor(lbl);
+            }
+        }
+
+        private void defaultAllSeat(int idx) {
+            for(var i = 0; i < lsSeat.Count; i++) {
+                if (lsSeat[i].BackColor == Color.LightGreen) {
+                    lsSeat[i].BackColor = Color.FromArgb(192, 192, 255);
+                    break;
+                }
             }
         }
 
@@ -161,6 +161,53 @@ namespace POS_App {
 
         private void bookedSeatColor(Label lbl) {
             lbl.BackColor = Color.FromArgb(255, 192, 192);
+        }
+        
+        private void detectCliked(Label lbl) {
+            int idx = convertIdxSeat(lbl.Tag.ToString());
+
+            btnClicked[idx] = checkClicked(btnClicked[idx]);
+            selectedClick(lbl, btnClicked[idx], idx);
+        }
+
+        private void seatA1_Click(object sender, EventArgs e) {
+            detectCliked(seatA1);
+        }
+
+        private void seatA2_Click(object sender, EventArgs e) {
+            detectCliked(seatA2);
+        }
+
+        private void seatA3_Click(object sender, EventArgs e) {
+            detectCliked(seatA3);
+        }
+
+        private void seatA4_Click(object sender, EventArgs e) {
+            detectCliked(seatA4);
+        }
+
+        private void seatA5_Click(object sender, EventArgs e) {
+            detectCliked(seatA5);
+        }
+
+        private void seatA6_Click(object sender, EventArgs e) {
+            detectCliked(seatA6);
+        }
+
+        private void seatA7_Click(object sender, EventArgs e) {
+            detectCliked(seatA7);
+        }
+
+        private void seatA8_Click(object sender, EventArgs e) {
+            detectCliked(seatA8);
+        }
+
+        private void seatA9_Click(object sender, EventArgs e) {
+            detectCliked(seatA9);
+        }
+
+        private void seatA10_Click(object sender, EventArgs e) {
+            detectCliked(seatA10);
         }
     }
 }
