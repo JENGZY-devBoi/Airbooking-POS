@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\forms\formBookingDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\formBookingDetail.Designer.cs">
+      <DependentUpon>formBookingDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\class\seatData.cs" />
     <Compile Include="src\forms\formSelectSeat.cs">
       <SubType>Form</SubType>
@@ -79,6 +85,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="src\forms\formBookingDetail.resx">
+      <DependentUpon>formBookingDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\forms\formSelectSeat.resx">
       <DependentUpon>formSelectSeat.cs</DependentUpon>
     </EmbeddedResource>

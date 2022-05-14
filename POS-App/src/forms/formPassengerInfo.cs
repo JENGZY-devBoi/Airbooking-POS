@@ -117,5 +117,13 @@ namespace POS_App {
             }
         }
 
+        private void btnClear_Click(object sender, EventArgs e) {
+            textEmail.Text = textFname.Text = textLname.Text = "";
+            passengerData.passengerDOB = null;
+            passengerData.passengerEmail = null;
+            passengerData.passengerFname = null;
+            passengerData.passengerLname = null;
+            passengerData.passengerTitle = null;
+        }
     }
 }

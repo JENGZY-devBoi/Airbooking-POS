@@ -7,8 +7,8 @@ using System.Data.SqlClient;
 
 namespace POS_App {
     static class dbConfig {
-        //static private string server = "DESKTOP-15449HT\\KMUTNBMC";
-        static private string server = "WIN-HKB7QARTSJ1\\KMUTNBMC";
+        static private string server = "DESKTOP-15449HT\\KMUTNBMC";
+        //static private string server = "WIN-HKB7QARTSJ1\\KMUTNBMC";
         static private string database = "airbooking";
         static private string userID = "user1";
         static private string password = "mypass1";
