@@ -54,6 +54,9 @@ namespace POS_App {
             passengerData.passengerEmail = textEmail.Text + "@" + comboEmail.SelectedItem.ToString();
 
             // GO TO formSelectSeat
+            var formSelectSeat = new formSelectSeat();
+            formSelectSeat.Show();
+            this.Hide();
         }
 
         private bool validFill() {
@@ -97,6 +100,21 @@ namespace POS_App {
             comboDepart.SelectedIndex = 0;
             comboTitle.SelectedIndex = 0;
             comboEmail.SelectedIndex = 0;
+
+            // Set passenger data (when back)
+            textFname.Text = passengerData.passengerFname;
+            textLname.Text = passengerData.passengerLname;
+            if (passengerData.passengerEmail != null) {
+                comboTitle.Text = passengerData.passengerTitle;
+                textEmail.Text = passengerData.passengerEmail.Split('@')[0];
+                comboEmail.Text = passengerData.passengerEmail.Split('@')[1];
+                dateTimeDOB.Value = new DateTime
+                    (
+                        Convert.ToInt32(passengerData.passengerDOB.Split('/')[2]), // Year
+                        Convert.ToInt32(passengerData.passengerDOB.Split('/')[0]), // Month
+                        Convert.ToInt32(passengerData.passengerDOB.Split('/')[1]) // Day
+                    );
+            }
         }
 
     }
