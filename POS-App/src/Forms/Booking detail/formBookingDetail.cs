@@ -78,5 +78,12 @@ namespace POS_App {
             formLogin.Show();
             this.Hide();
         }
+
+        private void btnPlayment_Click(object sender, EventArgs e) {
+            // GO TO payment forom
+            var formPayment = new formPayment();
+            formPayment.Show();
+            this.Hide();
+        }
     }
 }

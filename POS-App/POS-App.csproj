@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\Forms\Payment\formPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Forms\Payment\formPayment.Designer.cs">
+      <DependentUpon>formPayment.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Forms\Booking detail\formBookingDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="src\Forms\Booking detail\formBookingDetail.resx">
       <DependentUpon>formBookingDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Forms\Payment\formPayment.resx">
+      <DependentUpon>formPayment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Forms\Select seat\formSelectSeat.resx">
       <DependentUpon>formSelectSeat.cs</DependentUpon>

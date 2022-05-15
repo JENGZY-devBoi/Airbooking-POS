@@ -25,7 +25,7 @@ namespace POS_App {
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            this.btnContBooking = new System.Windows.Forms.Label();
+            this.btnPlayment = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.labelLname = new System.Windows.Forms.Label();
@@ -111,17 +111,18 @@ namespace POS_App {
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnContBooking
+            // btnPlayment
             // 
-            this.btnContBooking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnContBooking.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnContBooking.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnContBooking.Location = new System.Drawing.Point(45, 410);
-            this.btnContBooking.Name = "btnContBooking";
-            this.btnContBooking.Size = new System.Drawing.Size(313, 45);
-            this.btnContBooking.TabIndex = 0;
-            this.btnContBooking.Text = "Continue Booking";
-            this.btnContBooking.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnPlayment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnPlayment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPlayment.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlayment.Location = new System.Drawing.Point(10, 410);
+            this.btnPlayment.Name = "btnPlayment";
+            this.btnPlayment.Size = new System.Drawing.Size(374, 45);
+            this.btnPlayment.TabIndex = 0;
+            this.btnPlayment.Text = "Payment";
+            this.btnPlayment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnPlayment.Click += new System.EventHandler(this.btnPlayment_Click);
             // 
             // label10
             // 
@@ -795,7 +796,7 @@ namespace POS_App {
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.btnContBooking);
+            this.panel1.Controls.Add(this.btnPlayment);
             this.panel1.Controls.Add(this.panel9);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
@@ -1009,7 +1010,7 @@ namespace POS_App {
         }
 
         #endregion
-        private System.Windows.Forms.Label btnContBooking;
+        private System.Windows.Forms.Label btnPlayment;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label labelLname;
