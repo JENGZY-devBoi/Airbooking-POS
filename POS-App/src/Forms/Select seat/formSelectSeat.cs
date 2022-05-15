@@ -14,8 +14,10 @@ namespace POS_App {
         #region Fields
         private List<Label> lsSeat = new List<Label>();
         private List<string> lsSeatID = new List<string>();
+        private List<double> lsSeatPrice = new List<double>();
         private bool[] btnClicked;
         private string id;
+        private double price;
         #endregion
 
         public formSelectSeat() {
@@ -75,7 +77,32 @@ namespace POS_App {
         }
 
         private void btnConfirm_Click(object sender, EventArgs e) {
-            //
+            bool unselected = true;
+            for(int i = 0; i < btnClicked.Length; i++) {
+                if (btnClicked[i] == true) {
+                    unselected = false;
+                    break;
+                }
+            }
+
+
+            if (unselected) {
+                MessageBox.Show
+                (
+                       "Please select seat!",
+                       "Warning",
+                       MessageBoxButtons.OK,
+                       MessageBoxIcon.Warning
+                );
+                return;
+            }
+            seatData.seatID = id;
+            seatData.seatPrice = price;
+
+            // GO TO form booking detail
+            var formBookingDetail = new formBookingDetail();
+            formBookingDetail.Show();
+            this.Hide();
         }
 
         private void timerTimeNow_Tick_1(object sender, EventArgs e) {
@@ -103,17 +130,19 @@ namespace POS_App {
 
                 int idx = 0;
                 foreach (var itm in seatDR) {
-                    Console.WriteLine(itm["seatStatus"].ToString());
                     if (itm["seatStatus"].ToString() == "reserve") {
                         bookedSeatColor(lsSeat[idx]);
                         lsSeat[idx].Enabled = false;
                     }
                     lsSeatID.Add(itm["seatID"].ToString());
+                    lsSeatPrice.Add(Convert.ToDouble(itm["seatPrice"].ToString()));
+
                     idx++;
                 }
             } catch (Exception ex) {
                 Console.WriteLine(ex.Message);
                 dbConfig.connection.Close();
+                return false;
             }
 
             dbConfig.connection.Close();
@@ -145,8 +174,10 @@ namespace POS_App {
 
         private int convertIdxSeat(string str) {
             int idx = Convert.ToInt32(str.Split(' ')[1]) - 1;
+
+            // Keep value to calc in next form
             id = lsSeatID[idx];
-            Console.WriteLine(id);
+            price = lsSeatPrice[idx];
 
             return idx;
         }

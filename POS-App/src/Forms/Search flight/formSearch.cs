@@ -83,6 +83,25 @@ namespace POS_App {
             labelLname.Text = emp.lname;
         }
 
+        private void selectFlight(string i) {
+            // Minus by 1 because, c# index base on zero
+            int idx = Convert.ToInt32(i) - 1;
+
+            flightData.flightID = lsFlightID[idx];
+            flightData.flightFrom = comboFrom.SelectedItem.ToString();
+            flightData.flightTo = comboTo.SelectedItem.ToString();
+            flightData.flightDepart = arrDeparture[idx].Text;
+            flightData.flightArrival = arrArrival[idx].Text;
+            flightData.flightInfo = arrFlightInfo[idx].Text;
+            flightData.flightDateTime = comboDepart.SelectedItem.ToString();
+            flightData.flightPrice = Convert.ToDouble(arrPrice[idx].Text);
+
+            // GO TO passengerInfo form
+            var passengerForm = new formPassengerInfo();
+            passengerForm.Show();
+            this.Hide();
+        }
+
         private bool validFill() {
             // Valid fill complete info
             if (comboFrom.SelectedItem == null ||
@@ -177,7 +196,7 @@ namespace POS_App {
             int min = Math.Abs(minTo - minFrom);
 
             //return $"{((hr > 9) ? "00" : "0")}{hr}:{((min > 9)?"00":"0")}{min}";
-            return $"{hr}hr {min}min";
+            return $"{hr}hr {min}m";
         }
 
         private bool fetchTo() {
@@ -279,29 +298,6 @@ namespace POS_App {
             }
         }
 
-        private void selectFlight(string i) {
-            // Minus by 1 because, c# index base on zero
-            int idx = Convert.ToInt32(i) - 1;
-
-            // Check
-            //Console.WriteLine(arrDeparture[idx].Text);
-            //Console.WriteLine(arrArrival[idx].Text);
-            //Console.WriteLine(arrFlightInfo[idx].Text);
-            //Console.WriteLine(arrPrice[idx].Text);
-
-            flightData.flightID = lsFlightID[idx];
-            flightData.flightFrom = comboFrom.SelectedItem.ToString();
-            flightData.flightTo = comboTo.SelectedItem.ToString();
-            flightData.flightDepart = arrDeparture[idx].Text;
-            flightData.flightArrival = arrArrival[idx].Text;
-            flightData.flightInfo = arrFlightInfo[idx].Text;
-            flightData.flightDateTime = comboDepart.SelectedItem.ToString();
-
-            // GO TO passengerInfo form
-            var passengerForm = new formPassengerInfo();
-            passengerForm.Show();
-            this.Hide();
-        }
 
         private void timerTimeNow_Tick(object sender, EventArgs e) {
             labelTimeNow.Text = DateTime.Now.ToString("HH:mm:ss");

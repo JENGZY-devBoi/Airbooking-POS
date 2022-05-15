@@ -59,6 +59,7 @@ namespace POS_App {
             this.label13 = new System.Windows.Forms.Label();
             this.dateTimeDOB = new System.Windows.Forms.DateTimePicker();
             this.panelFlight1 = new System.Windows.Forms.Panel();
+            this.btnClear = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.comboEmail = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -432,6 +433,7 @@ namespace POS_App {
             // 
             this.panelFlight1.AutoScroll = true;
             this.panelFlight1.BackColor = System.Drawing.Color.White;
+            this.panelFlight1.Controls.Add(this.btnClear);
             this.panelFlight1.Controls.Add(this.dateTimeDOB);
             this.panelFlight1.Controls.Add(this.label13);
             this.panelFlight1.Controls.Add(this.label14);
@@ -450,6 +452,19 @@ namespace POS_App {
             this.panelFlight1.Name = "panelFlight1";
             this.panelFlight1.Size = new System.Drawing.Size(1058, 537);
             this.panelFlight1.TabIndex = 4;
+            // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.DarkGray;
+            this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClear.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(960, 10);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(90, 45);
+            this.btnClear.TabIndex = 2;
+            this.btnClear.Text = "clear";
+            this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // label14
             // 
@@ -492,10 +507,10 @@ namespace POS_App {
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1449, 666);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panelFlight1);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "formPassengerInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -551,5 +566,6 @@ namespace POS_App {
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboEmail;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label btnClear;
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace POS_App {
     static class flightData {
         static public string flightID;
-        static public string flightAirline;
+        static public string flightAirline = "Thai Air";
         static public string flightFrom;
         static public string flightTo;
         static public string flightInfo;

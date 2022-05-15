@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace POS_App {
     static class seatData {
-        static public string seatStatus;
+        static public string seatStatus = "reserve"; // set when query to database
         static public string seatID;
+        static public double seatPrice;
     }
 }
