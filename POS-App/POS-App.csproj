@@ -47,57 +47,57 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\forms\formBookingDetail.cs">
+    <Compile Include="src\Forms\Booking detail\formBookingDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\forms\formBookingDetail.Designer.cs">
+    <Compile Include="src\Forms\Booking detail\formBookingDetail.Designer.cs">
       <DependentUpon>formBookingDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\class\seatData.cs" />
-    <Compile Include="src\forms\formSelectSeat.cs">
+    <Compile Include="src\Class\seatData.cs" />
+    <Compile Include="src\Forms\Select seat\formSelectSeat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\forms\formSelectSeat.Designer.cs">
+    <Compile Include="src\Forms\Select seat\formSelectSeat.Designer.cs">
       <DependentUpon>formSelectSeat.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\forms\formPassengerInfo.cs">
+    <Compile Include="src\Forms\Passenger\formPassengerInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\forms\formPassengerInfo.Designer.cs">
+    <Compile Include="src\Forms\Passenger\formPassengerInfo.Designer.cs">
       <DependentUpon>formPassengerInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\class\passengerData.cs" />
-    <Compile Include="src\class\flightData.cs" />
-    <Compile Include="src\forms\formSearch.cs">
+    <Compile Include="src\Class\passengerData.cs" />
+    <Compile Include="src\Class\flightData.cs" />
+    <Compile Include="src\Forms\Search flight\formSearch.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\forms\formSearch.Designer.cs">
+    <Compile Include="src\Forms\Search flight\formSearch.Designer.cs">
       <DependentUpon>formSearch.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\class\emp.cs" />
-    <Compile Include="src\dbConfig\dbOperation.cs" />
-    <Compile Include="src\dbConfig\dbConfig.cs" />
-    <Compile Include="src\forms\formLogin.cs">
+    <Compile Include="src\Class\emp.cs" />
+    <Compile Include="src\DBConfig\dbOperation.cs" />
+    <Compile Include="src\DBConfig\dbConfig.cs" />
+    <Compile Include="src\Forms\Login\formLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\forms\formLogin.Designer.cs">
+    <Compile Include="src\Forms\Login\formLogin.Designer.cs">
       <DependentUpon>formLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="src\forms\formBookingDetail.resx">
+    <EmbeddedResource Include="src\Forms\Booking detail\formBookingDetail.resx">
       <DependentUpon>formBookingDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\forms\formSelectSeat.resx">
+    <EmbeddedResource Include="src\Forms\Select seat\formSelectSeat.resx">
       <DependentUpon>formSelectSeat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\forms\formPassengerInfo.resx">
+    <EmbeddedResource Include="src\Forms\Passenger\formPassengerInfo.resx">
       <DependentUpon>formPassengerInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\forms\formSearch.resx">
+    <EmbeddedResource Include="src\Forms\Search flight\formSearch.resx">
       <DependentUpon>formSearch.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\forms\formLogin.resx">
+    <EmbeddedResource Include="src\Forms\Login\formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

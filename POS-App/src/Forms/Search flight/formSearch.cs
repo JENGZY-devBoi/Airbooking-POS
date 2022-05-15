@@ -196,7 +196,7 @@ namespace POS_App {
             int min = Math.Abs(minTo - minFrom);
 
             //return $"{((hr > 9) ? "00" : "0")}{hr}:{((min > 9)?"00":"0")}{min}";
-            return $"{hr}hr {min}min";
+            return $"{hr}hr {min}m";
         }
 
         private bool fetchTo() {
