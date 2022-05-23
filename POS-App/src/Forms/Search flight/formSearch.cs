@@ -97,6 +97,13 @@ namespace POS_App {
             flightData.flightPrice = Convert.ToDouble(arrPrice[idx].Text);
 
             // GO TO passengerInfo form
+            // Clearß
+            passengerData.passengerTitle = null;
+            passengerData.passengerEmail = null;
+            passengerData.passengerFname = null;
+            passengerData.passengerLname = null;
+            passengerData.passengerDOB = null;
+
             var passengerForm = new formPassengerInfo();
             passengerForm.Show();
             this.Hide();
